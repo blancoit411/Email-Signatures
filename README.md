@@ -1,120 +1,116 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd8a2759-072f-4e5e-9228-c2a122f8cc64/deploy-status)](https://app.netlify.com/sites/blackrockconstructiondev/deploys)
 
-# Eleventy Netlify Boilerplate
+# Blackrock Construction Website
 
 ## What is it?
 
-A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+A simple yet elegant solution to providing the client with a bloated wordpress CMS solution, rather it employs Netlify CMS and Eleventy to build static content when updates are pushed to this repository.
 
-Use it as a starter for your own JAMstack projects, or as an easy way to get started building websites with Eleventy.
+**This project is based on [Eleventy Netlify Template](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)**
 
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
+## [Development Site](https://blackrockconstructiondev.netlify.app/) • [Project Planning](https://www.notion.so/Blackrock-Construction-Website-e2666ecf217b4b6ead00b268c22b2138)
 
-🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
+## Proposal
 
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/)
+### Overview
 
-## Features
+The project is a complete redesign of the website [blackrockconstructiontx.com](http://blackrockconstructiontx.com/). It will be an informational site where the user will find details about the services Blackrock Construction offers, its equipment for sale, current job opportunities, and contact functionality. The completed website will include a content management system that would allow website administrators to update and add content. Upon completion, the website content should be easily editable yet look modern and functional, matching or exceeding competitors' sites. It will follow Search Engine Optimization principles that will make it easier to find and more appealing.
 
-* NEW: Added basic support for post authors, using a simple folder collection
-* Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
-* Sample pages and a blog with tag support
-* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* Includes a working contact form
-* CSS 2kb minified, inlined for fastest page render
-* Optional pipeline for minified inline JS
-* Pre-builds and minifies your HTML too
-* Uses Markdown files for content
-* Uses Nunjucks (or Liquid) templates for layout
-* 100% Javascript framework free
-* Continuous Deployment workflow via Netlify
+---
 
-## Want to try it out now?
+### Project Description + Process
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+#### 1. Design
 
-Clicking the button above will deploy a copy of the demo website to your Netlify
-account (you can create an account during this process if you don't have one)
-and everything needed for running the CMS:
+We'll start with a visual redesign of the website. I'll work with Blackrock Construction staff to determine the best visual style and organization for the site. Our primary focus is to improve visual appeal, usability, and generate more leads. The website should be clean, easy to navigate, and simple to use while communicating the heritage and strong values of Blackrock Construction.
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
-* Process form data with Netlify Forms
+The first step will be to construct a visual prototype. The prototype will communicate the general aesthetic and content layout of the website. This stage is our opportunity to address issues in design and layout. Once this is approved, we'll begin full development.
 
-### Setup authentication
+#### 2. Development & Content
 
-After deploying this project, Netlify Identity will add you as a CMS user and
-will email you an invite. It is not necessary to accept this invite if you wish
-to use an
-[OAuth provider](https://www.netlify.com/docs/identity/#external-provider-login)
-(e.g. Github) to manage authentication for your CMS.
-It is recommended to use this method of authentication as it removes the need
-for an email & password to log in to the CMS and is generally more secure. You
-will need to add an OAuth provider in your Netlify app settings under
-"Settings" > "Identity" > "External providers".
+Once we have agreed upon the design and structure, I will begin adding content – this is the phase in which I will write the code and collect assets for the website. I'll communicate through a weekly update to ensure that I am delivering everything you're looking for. A developmental version will be accessible for review throughout this process.
 
-Once you've added an OAuth provider, navigate to `/admin` on your site, select your provider from the
-list, and you should then be logged into your CMS. Cool huh?
+**Specific goals:**
 
-Now you're all set, and you can start editing content!
+##### Home Page
 
-## Gotchas
+The site will have a home page containing customizable intro information, a sleek design, and engaging imagery.
 
-If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
-as the token generated using the deploy to Netlify button can only access public repositories. To
-regenerate your token, head to "Settings" in your Netlify site dashboard, go to the "Identity"
-section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
-see a text link to "Generate access token in GitHub".
+##### User-Friendly Layout
 
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+The redesigned site will have an easy-to-navigate structure so that all information such as services, projects, careers, equipment for sale, and the contact form is readily accessible.
 
-## Local development
+##### Dynamic Content Pages
 
-### 1. Clone this repository:
+The site will include several pages with information that will allow for the regular addition of content or frequent updates. Dynamic content is required for pages that display items for sale, team member profiles, or job opportunities.
 
-```
-git clone https://github.com/danurbanowicz/eleventy-netlify-boilerplate.git my-blog-name
-```
+##### Proposed Structure
 
+This is an idea based on some of the example competitor's websites.
 
-### 2. Navigate to the directory
+![Blackrock%20Construction%209c048f7d613c4e31b1dc103ca2125dca/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/78b3ab94-4ad3-4d50-8214-f19596117f00/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200806%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200806T181236Z&X-Amz-Expires=86400&X-Amz-Signature=55af8cdbf5cb03bdade8b524e21749edb06fc3cbe2c81463801b4b671fc00e8c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
 
-```
-cd my-blog-name
-```
+#### 3. Deployment
 
-Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
+After the site construction is completed, we will deploy to the internet and then focus on any issues that arise from deployment. This final step includes training resources concerning the content management system. In this phase, we will also finalize the handing off of all resources, source code, and administration rights before the project is deemed complete.
 
-### 3. Install dependencies locally
+##### Hosting
 
-```
-npm install @11ty/eleventy
-```
+Although not included in the price of the redesign, we want to present you with two different options, both of these options are not final as the project has not been completed and we haven't shared traffic data. Based upon the current proposal though we can give you a realistic idea of the cost. 
 
-### 4. Edit _data/metadata.json
+1) We could host the site for you for **$20/month**. In this situation, we will make sure that the site continues working as designed and that if you have any issues or problems we will be able to provide support. Emergency support is included should anything stop working, however, this does not include additions or changes to the final site.
 
-This file contains your site title and author details, and can be used to store any other commonly used site data.
+2) We can help you find a third party to host the site. Beyond the initial setup, we wouldn't be able to provide support once the hosting has been handed over. 
 
-### 5. Run Eleventy (builds the site)
+---
 
-```
-npx @11ty/eleventy
-```
+### Cost Breakdown
 
-Or build automatically when a template changes:
-```
-npx @11ty/eleventy --watch
-```
+##### Design Mockups
 
-Or in debug mode:
-```
-DEBUG=* npx @11ty/eleventy
-```
+$400
 
-## Bug reports, feature requests, etc
+Ideate and design a visual representation of the site, it's aesthetic, structure, layout, interactions, and organization.
 
-This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR.
+##### Home Page + Navigation Setup
 
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+$750
+
+Core development and design of the website.
+
+##### Additional Pages
+
+$350
+
+Additional pages that contain the content of the website. Each of these pages will be crafted to make sure all the information is communicated clearly, concisely, and in an engaging manner.
+
+##### Content Management System
+
+$750
+
+Required if the customer wants to manage the site content themselves. Requires logins to manage and a fair amount of initial setup.
+
+#### Total
+
+#### $2250
+
+---
+
+### Payment Schedule
+
+The schedule for the project uses the following structure.
+
+**At project start** - **50%**
+
+**At project completion** - *****Estimated two months from start date* ****- **50%**
+
+---
+
+### What now?
+
+This proposal serves as a project guideline so that we both know what is being delivered. It is a living, changeable document until the project begins. If there's anything you want to add or change, let me know, and I'll create a new draft for review.
+
+If everything looks great, let me know and we'll get the agreement together.
+
+This proposal will be valid until Aug 12, 2020.
+
