@@ -1,7 +1,7 @@
 :root {
-	--primary: blue;
+	--primary: black;
 	--secondary: white;
-	--background: #FFF0EB;
+	--background: white;
 }
 
 *, *:before, *:after {
@@ -20,10 +20,9 @@ body {
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	background-color: var(--background);
-}
-
-main {
-	max-width: 37.5em;
+	
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 p,
@@ -46,10 +45,9 @@ img {
 	height: auto;
 }
 
-header,
-main,
+
 footer {
-	padding: 1em;
+	padding: 1em 0;
 }
 
 main {
@@ -78,41 +76,30 @@ pre {
 	margin: .5em 0;
 }
 
-/* Header Logo (style as h2) */
-header > em {
-	display: block;
-	font-size: 2em;
-	margin: .67em 0;
-	font-weight: bold;
-	font-style: normal;
-}
 
-/* Header Nav */
-header nav ul {
+/* Nav */
+nav ul {
 	padding: 0;
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
 }
 
-header nav ul :first-child {
+nav ul :first-child {
 	margin-left: 0;
 }
 
-header nav li {
+nav ul li {
 	display: inline-block;
 	margin: 0 .25em;
 }
 
-header nav li a {
-	padding: .25em .5em;
-	border-radius: .25em;
-}
-
-header nav li a[href]:not(:hover) {
+nav ul li a[href]:not(:hover) {
 	text-decoration: none;
 }
 
-header nav li a[data-current="current item"] {
-	background-color: white;
+nav ul li a[data-current="current item"] {
+	background-color: rgb(255, 174, 0);
 }
 
 /* Posts List */
