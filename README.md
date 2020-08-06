@@ -66,33 +66,23 @@ Although not included in the price of the redesign, we want to present you with 
 
 ### Cost Breakdown
 
-##### Design Mockups
-
-$400
+##### Design Mockups - $400
 
 Ideate and design a visual representation of the site, it's aesthetic, structure, layout, interactions, and organization.
 
-##### Home Page + Navigation Setup
-
-$750
+##### Home Page + Navigation Setup - $750
 
 Core development and design of the website.
 
-##### Additional Pages
-
-$350
+##### Additional Pages - $350
 
 Additional pages that contain the content of the website. Each of these pages will be crafted to make sure all the information is communicated clearly, concisely, and in an engaging manner.
 
-##### Content Management System
-
-$750
+##### Content Management System - $750
 
 Required if the customer wants to manage the site content themselves. Requires logins to manage and a fair amount of initial setup.
 
-#### Total
-
-#### $2250
+#### Total - $2250
 
 ---
 
@@ -102,7 +92,7 @@ The schedule for the project uses the following structure.
 
 **At project start** - **50%**
 
-**At project completion** - *****Estimated two months from start date* ****- **50%**
+**At project completion** - *Estimated two months from start date* - **50%**
 
 ---
 

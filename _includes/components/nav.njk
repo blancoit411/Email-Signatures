@@ -1,6 +1,9 @@
 <nav>
   {% set navPages = collections.all | eleventyNavigation %}
   <ul>
+    <li>
+      <a href="/index.html"><img src="static\img\logo.png" alt="Blackrock Construction Logo"></a>
+    </li>
   {%- for entry in navPages %}
     <li>
       <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
