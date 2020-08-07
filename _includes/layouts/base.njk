@@ -3,11 +3,11 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body onload="highlightDate()">
 		
 		{% include "components/nav.njk" %}
 
-		<main>
+		<main class="contentWidth">
 			{{ layoutContent | safe }}
 		</main>
 

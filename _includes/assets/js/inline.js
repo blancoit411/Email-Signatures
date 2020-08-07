@@ -7,3 +7,10 @@ if (window.netlifyIdentity) {
     }
   });
 }
+
+function highlightDate() {
+  let days= ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  let currentDay = days[new Date().getDay()];
+  let selected = document.getElementById(currentDay);
+  selected.classList.add("currentDay")
+}
