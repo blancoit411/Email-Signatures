@@ -7,13 +7,13 @@
 
 *, *:before, *:after {
   box-sizing: border-box;
+  font-family: 'Work Sans', "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Work Sans', "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
 
 .contentWidth{
 	max-width: var(--contentWidth);
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -45,24 +46,48 @@ img {
 }
 
 
+h1,
+h2 {
+	font-family: 'Friz Quadrata';
+}
+
 
 
 
 /* Nav */
-nav ul {
-	padding: 0;
+
+nav{
+	margin-top: 2em;
+}
+
+nav > div.contentWidth > ul {
+	padding: 1em inherit;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 }
 
-nav ul :first-child {
-	margin-left: 0;
-}
-
 nav ul li {
 	display: inline-block;
-	margin: 0 .25em;
+}
+
+nav ul > li > a {
+	padding: 0.3em 1.2em;
+	border-radius: 0.9em;
+}
+
+
+nav ul > li:first-of-type > a{
+	padding: 0;
+	
+}
+nav ul > li:first-of-type > a > img{
+transform: translateY(-0.5em);
+}
+
+nav ul > li:last-of-type > a{
+	background: black;
+	color: white;
 }
 
 nav ul li a[href]:not(:hover) {
@@ -132,7 +157,6 @@ button {
   padding: 1em;
   margin-bottom: 1em;
 	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
 }
 
 input,
@@ -158,9 +182,9 @@ button {
 
 
 
-/*			-------------	 		*/
-/*		LUKE ADDING ID STYLING		*/
-/* 			-------------			*/
+/*				-------------	 		*/
+/*			LUKE ADDED STYLING			*/
+/* 				-------------			*/
 
 
 

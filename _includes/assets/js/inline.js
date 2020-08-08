@@ -14,3 +14,9 @@ function highlightDate() {
   let selected = document.getElementById(currentDay);
   selected.classList.add("currentDay")
 }
+
+function getCurrentYear() {
+  let currentYear = new Date().getFullYear();
+  let selected = document.getElementById("currentYear");
+  selected.innerHTML = currentYear;
+}
