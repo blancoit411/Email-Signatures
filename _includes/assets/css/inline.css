@@ -235,13 +235,21 @@ footer a[href] {
 #officeHrsDate {
 	position: absolute;
 	text-align: right;
-	transform: translate(-45px, calc(-100%));
+	transform: translate(-45px, calc(-100% - 2em));
 }
 
-#officeHrsDate > div {
+#officeHrsDate > span {
 	opacity: .3;
 }
 
-#officeHrsDate > div.currentDay{
+#officeHrsDate > span.currentDay{
 	opacity: 1;
+}
+
+
+
+
+.tinyParagraph{
+	font-size: 0.5rem;
+	opacity: 0.5;
 }
