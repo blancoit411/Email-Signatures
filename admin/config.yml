@@ -48,9 +48,36 @@ collections:
     label: "Jobs"
     folder: "jobs"
     create: true
-    slug: "{{fields.name}}"
+    # slug: "{{fields.name}}"
     fields:
       - {label: "Tags", name: "tags", widget: "hidden", default: "jobs"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Type", name: "type", widget: "string"}
+  # Equipment
+  - name: "equipment"
+    label: "Equipment for sale"
+    folder: "equipment"
+    create: true
+    fields:
+      - {label: "Tags", name: "tags", widget: "hidden", default: "equipment"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Price", name: "price", widget: "string", default: "$1000"}
+      - {label: "Description", name: "desc", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+  # Projects
+  - name: "projects"
+    label: "Projects"
+    folder: "projects"
+    create: true
+    slug: "{{fields.name}}"
+    fields:
+      - {label: "Tags", name: "tags", widget: "hidden", default: "projects"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Project Location", name: "location", widget: "string"}
+      - {label: "Person of Interest", name: "person", widget: "string"}
+      - {label: "Date of Project", name: "date", widget: "date", format 'MMM YYYY'}
+      - {label: "Featured Image", name: "featImage", widget: "image"}
+      - {label: "Other Image", name: "images", widget: "image"}
+      - {label: "Summary Text", name: "summary", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
