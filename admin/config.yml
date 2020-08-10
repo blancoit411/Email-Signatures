@@ -50,6 +50,7 @@ collections:
     create: true
     slug: "{{fields.name}}"
     fields:
+      - {label: "Tags", name: "tags", widget: "hidden", default: "jobs"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Type", name: "type", widget: "string"}
