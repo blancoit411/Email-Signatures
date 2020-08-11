@@ -15,8 +15,8 @@ function highlightDate() {
   selected.classList.add("currentDay")
 }
 
-function getCurrentYear() {
-  let currentYear = new Date().getFullYear();
-  let selected = document.getElementById("currentYear");
-  selected.innerHTML = currentYear;
-}
+// function getCurrentYear() {
+//   let currentYear = new Date().getFullYear();
+//   let selected = document.getElementById("currentYear");
+//   selected.innerHTML = currentYear;
+// }
