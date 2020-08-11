@@ -88,7 +88,7 @@ collections:
     folder: "team"
     create: true
     slug: "{{fields.name}}"
-    media_folder: static/uploads/team
+    media_folder: /static/uploads/team
     fields:
       - {label: "Tags", name: "tags", widget: "hidden", default: "team"}
       - {label: "Name", name: "name", widget: "string"}
