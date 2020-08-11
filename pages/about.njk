@@ -57,44 +57,16 @@ eleventyNavigation:
     </p>
 
     <!-- Team items will be created by NETLIFY CMS pulling form Eleventy Collection -->
+      
       <div>
-
+        {%- for team in collections.team %} 
         <div>
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
+          <img src="{{team.data.image}}" alt="Image of {{team.data.name}}">
+          <p>{{team.data.name}}</p>
+          <p>{{team.data.role}}</p>
+          <p>{{team.data.desc}}</p>
         </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
+        {%- endfor %}
     </div>
 </div>
 
