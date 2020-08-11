@@ -197,23 +197,15 @@ footer {
 }
 
 footer div.contentWidth{
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template: 1fr 30px / 50% 1fr 1fr;
+	
+	grid-template-areas:
+	". . ."
+	"tinyText tinyText tinyText";
+	
 }
 
-footer div.contentWidth > div{
-	width: 50%;
-}
-
-#siteInfo{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-}
-
-#siteInfo > div:last-of-type {
-	padding-left: 100px;
-}
 
 footer ul{
 	list-style: none;
