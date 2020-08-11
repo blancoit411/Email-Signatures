@@ -1,0 +1,47 @@
+---
+title: Projects
+date: 2017-01-01T00:00:00.000Z
+permalink: /projects/index.html
+eleventyNavigation:
+  key: Projects
+  order: 2
+---
+
+<div id="featuredSection">
+  <h1>Featured Project</h1>
+  <h1>Mainline Sewer</h1>
+  <p>April 2020 / Arlington TX / William Battle</p>
+  <p>Integer ullamcorper donec feugiat faucibus nibh a vel praesent. Velit, tortor, justo, aliquet vel, aliquam, etiam magna semper. Diam nulla tortor eu, vulputate vitae nisl, malesuada ligula nibh. </p>
+  <div>
+    <svg></svg>
+    <p>Elementum ac erat lectus quis. Mauris vel donec leo habitant at at commodo, molestie nec. Id tristique et convallis faucibus consectetur nunc lacus, sit sed. Accumsan sed sit feugiat.</p>
+  </div>
+  <div>
+    <svg></svg>
+    <p>Ac varius tortor dolor morbi sit et egestas. Quis sem lacus, tellus pulvinar suspendisse pellentesque euismod tempor. Tincidunt risus gravida venenatis amet eget nulla consequat.</p>
+  </div>
+  <div>
+    <svg></svg>
+    <p>In tincidunt eu venenatis non morbi donec sed diam. Neque mollis mauris quam neque, nisl quis. Mauris elit a at viverra molestie aliquam dapibus nullam. Nec bibendum gravida.</p>
+  </div>
+  <div>
+    <svg></svg>
+    <p>Gravida ultricies aliquet lacinia tellus auctor dolor nulla nulla scelerisque. Tempus eu enim eu ornare pharetra neque. Blandit ultrices amet quis purus arcu tellus cum tincidunt.</p>
+  </div>
+  <img src="" alt="">
+  <p>Integer ullamcorper donec feugiat faucibus nibh a vel praesent. Velit, tortor, justo, aliquet vel, aliquam, etiam magna semper. Diam nulla tortor eu, vulputate vitae nisl, malesuada ligula nibh. </p>
+</div>
+
+<div>
+  <h1>Previous Projects</h1>
+  <div id="projectContainer">
+    {%- for projects in collections.projects %}
+    <div>
+      <img src="{{projects.data.featImage}}" alt="Image of the {{projects.data.name}} project">
+      <p>{{projects.data.name}}</p>
+      <p>{{projects.data.summary}}</p>
+      <a href="{{projects.url}}">Read more →</a>
+    </div>
+    {%- endfor %}
+  </div>
+</div>
