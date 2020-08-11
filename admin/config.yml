@@ -85,7 +85,7 @@ collections:
   # Team
   - name: "Team"
     label: "Team"
-    foder: "team"
+    folder: "team"
     create: true
     slug: "{{fields.name}}"
     media_folder: static/uploads/team
