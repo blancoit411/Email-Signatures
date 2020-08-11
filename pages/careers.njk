@@ -6,19 +6,31 @@ eleventyNavigation:
   key: Careers
   order: 3
 ---
-<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<div>
+  <h1>Find your future</h1>
+  <p>Tempus varius a aenean mauris sit consequat. Nulla elementum ac congue eu nisl viverra libero, tellus ut. Lectus dolor nunc sit lacinia leo. Scelerisque congue in neque, rhoncus mattis molestie quam ullamcorper.</p>
+  <a href="/contact">
+    Contact us to apply →</a>
+  
+  <!-- Table containing DIV for layout purposes -->
+  <!-- might be able to remove -->
+  <div>
+    <table>
+      <tr>
+        <th>Job Title</th>
+        <th>Location</th>
+        <th>Type</th>
+      </tr>  
 
-Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
-fruit  </p>
+      <!-- nunjuks javascript function that creates table rows for data from job collections -->
 
-  <ul>
-  {%- for jobs in collections.jobs %}
-    <li>
-      {{ jobs.data.name }} - {{ jobs.data.location }} - {{ jobs.data.type }}
-    </li>
-  {%- endfor %}
-  </ul>
+      {%- for jobs in collections.jobs %}
+      <tr>
+        <td>{{ jobs.data.name }}</td>
+        <td>{{ jobs.data.location }}</td>
+        <td>{{ jobs.data.type }}</td>
+      </tr>
+      {%- endfor %}
+    </table>
+  </div>
+</div>

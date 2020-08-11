@@ -82,3 +82,16 @@ collections:
       - {label: "Other Image", name: "images", widget: "image"}
       - {label: "Summary Text", name: "summary", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  # Team
+  - name: "Team"
+    label: "Team"
+    foder: "team"
+    create: true
+    slug: "{{fields.name}}"
+    media_folder: static/uploads/team
+    fields:
+      - {label: "Tags", name: "tags", widget: "hidden", default: "team"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Description", name: "desc", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
