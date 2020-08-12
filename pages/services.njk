@@ -12,7 +12,7 @@ eleventyNavigation:
   <p>Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
 
   <div id="servicesContainer">
-    {%- for services in collection.services %}
+    {%- for services in collections.services %}
     <div>
       <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
       <p>{{ services.data.name }}</p>
@@ -35,7 +35,7 @@ eleventyNavigation:
   </div>
 
   <div>
-    {%- for equipment in collection.equipment %}
+    {%- for equipment in collections.equipment %}
     <div>
       <img src="{{ equipment.data.image }}" alt="{{ equipment.data.name }} image">
       <p>{{ equipment.data.name }} - {{ equipment.data.price }}</p>
