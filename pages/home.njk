@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+title: Home
+permalink: /
+eleventyNavigation:
+  key: Home
+  order: 0
+---
+
+<div id="serviceSummarySection">
+  <p>Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
+  <h1>Our Services</h1>
+  <div>
+    {%- for services in collections.services %}
+    <div>
+      <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
+      <p>{{ services.data.name }}</p>
+      <p>{{ services.data.summary }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+  <a href="/services/">See all that we have to offer →</a>
+</div>
+
+<div id="testimonialSection">
+  <div>
+    <span>"</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum id sagittis fringilla ipsum congue blandit suspendisse odio. Enim iaculis dictumst montes, non iaculis.</p>
+    <p>John Smith</p>
+    <p>City of Arlington Utility Engineering Manager</p>
+    <svg></svg>
+    <a href="/projects/">Read more feedback on our projects →</a>
+  </div>
+</div>
+
+<div id="featProjectSection">
+  <div>
+    <h1>Featured Projects</h1>
+    <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we can’t wait to get our hands dirty on!</p>
+  </div>
+  {%- for projects in collections.projects %}
+  <div>
+    <img src="{{projects.data.featImage}}" alt="Image of the {{projects.data.name}} project">
+    <p>{{projects.data.name}}</p>
+    <p>{{projects.data.summary}}</p>
+    <a href="{{projects.url}}">Read more →</a>
+  </div>
+  {%- endfor %}
+</div>
