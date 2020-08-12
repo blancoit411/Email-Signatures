@@ -23,13 +23,13 @@ body {
 	background-color: var(--background);
 }
 
-.contentWidth{
+body>*>*{
 	max-width: var(--contentWidth);
 	width: 100%;
 	margin: 0 auto;
 }
 
-.contentWidth>*{
+body>*>*>*{
 	padding: 0 25px;
 }
 
@@ -123,9 +123,12 @@ img {
 
 nav{
 	margin-top: 2em;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
 }
 
-nav > div.contentWidth > ul {
+nav > div > ul {
 	padding: 1em inherit;
 	list-style: none;
 	display: flex;
@@ -261,7 +264,7 @@ footer {
 	padding: 1em 0;
 }
 
-footer div.contentWidth{
+footer > div{
 	display: grid;
 	grid-template: 1fr 30px / 50% 1fr 1fr;
 	
@@ -309,4 +312,26 @@ footer a[href] {
 .tinyParagraph{
 	font-size: 0.5rem;
 	opacity: 0.5;
+}
+
+#hero{
+	width: 100%;
+	max-width: none;
+	height: 900px;
+	background-size: cover;
+	opacity: 0.7;
+	background-color: currentColor;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+#sidekick {
+	width: 100%;
+	max-width: none;
+	height: 500px;
+	background-size: cover;
+	opacity: 0.7;
+	background-color: currentColor;
 }
