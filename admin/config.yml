@@ -62,6 +62,7 @@ collections:
     folder: "equipment"
     create: true
     slug: "{{fields.name}}"
+    media_folder: /static/uploads/equipment
     fields:
       - {label: "Tags", name: "tags", widget: "hidden", default: "equipment"}
       - {label: "Name", name: "name", widget: "string"}
@@ -75,6 +76,7 @@ collections:
     folder: "projects"
     create: true
     slug: "{{fields.name}}"
+    media_folder: /static/uploads/projects
     fields:
       - {label: "Tags", name: "tags", widget: "hidden", default: "projects"}
       - {label: "Name", name: "name", widget: "string"}
