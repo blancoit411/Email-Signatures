@@ -30,27 +30,29 @@ eleventyNavigation:
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum id sagittis fringilla ipsum congue blandit suspendisse odio. Enim iaculis dictumst montes, non iaculis.</p>
     <p>John Smith</p>
     <p>City of Arlington Utility Engineering Manager</p>
-    <svg></svg>
+    {# come back to this! <svg></svg> #}
     <a href="/projects/">Read more feedback on our projects →</a>
   </div>
 </div>
 
 <div id="featProjectSection">
-  <div>
-    <h1>Featured Projects</h1>
-    <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we can’t wait to get our hands dirty on!</p>
+  <div class="triCard">
+    <div>
+      <h1>Featured<br>Projects</h1>
+      <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we can’t wait to get our hands dirty on!</p>
+    </div>
+    {%- for projects in collections.projects %}
+    <div>
+      <img src="{{projects.data.featImage}}" alt="Image of the {{projects.data.name}} project">
+      <p>{{projects.data.name}}<br>
+      {{projects.data.summary}}<br>
+      <a href="{{projects.url}}">Read more →</a></p>
+    </div>
+    {%- endfor %}
   </div>
-  {%- for projects in collections.projects %}
-  <div>
-    <img src="{{projects.data.featImage}}" alt="Image of the {{projects.data.name}} project">
-    <p>{{projects.data.name}}</p>
-    <p>{{projects.data.summary}}</p>
-    <a href="{{projects.url}}">Read more →</a>
-  </div>
-  {%- endfor %}
 </div>
 
-{# Font Styling Section #}
+{# Font Styling Section
 <div>
   <h1>Header 1</h1>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, inventore quaerat. Mollitia, molestiae dolorem laboriosam ex illum rem repellat labore nobis magnam qui earum dicta reprehenderit ducimus asperiores at aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magni quasi iste ipsa commodi, explicabo vero officiis totam esse dignissimos beatae voluptate quisquam harum tempore quas temporibus nobis provident earum?Enim assumenda, obcaecati quas provident temporibus, ipsum ipsa error modi nemo id quos maxime dolor cumque dolorem quibusdam, nostrum corporis. Voluptatum nihil quam ullam expedita fuga eos quia libero iusto.</p>
@@ -70,4 +72,4 @@ eleventyNavigation:
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, fuga deleniti totam explicabo laboriosam facilis quas dignissimos unde velit mollitia, sit iste omnis officiis quaerat sint earum laborum error corrupti.
   Voluptatibus perspiciatis in, similique impedit corporis quia autem ullam repellendus sint eveniet, et blanditiis aspernatur harum cum! Excepturi minus, cumque ea, necessitatibus qui suscipit iusto asperiores quam adipisci temporibus eveniet.
   Nesciunt quasi provident veniam ut ab ex unde officiis ducimus aspernatur sequi ad veritatis, impedit mollitia rem reiciendis sint, suscipit similique nisi dolore inventore deleniti omnis officia. Totam, quam pariatur!</p>
-</div>
+</div> #}

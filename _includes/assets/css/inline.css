@@ -80,7 +80,7 @@ p.standout{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 23px;
-	line-height: 31px;
+	line-height: 1.5;
 }
 
 p,
@@ -90,7 +90,7 @@ code {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
-	line-height: 19px;
+	line-height: 1.5;
 }
 
 a {
@@ -105,7 +105,9 @@ a:hover{
 }
 
 
-
+.fade {
+	opacity: 0.1;
+}
 
 
 
@@ -114,6 +116,9 @@ img {
 	height: auto;
 }
 
+.center{
+	text-align: center;
+}
 
 
 
@@ -259,6 +264,7 @@ button {
 
 
 footer {
+	margin-top: 3em;
 	background: black;
 	color: white;
 	padding: 1em 0;
@@ -334,4 +340,37 @@ footer a[href] {
 	background-size: cover;
 	opacity: 0.7;
 	background-color: currentColor;
+}
+
+
+
+/* TRI-CARD */
+div.triCard{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/* Save for later! */
+/* div.triCard::after {
+	content: "";
+	flex: auto;
+  } */
+
+div.triCard>div{
+	padding: 0;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	margin-bottom: 35px;
+}
+
+div.triCard>div>img{
+	height: 300px;
+}
+
+div.triCard>div>p {
+	margin: 0.8em 0.8em;
 }

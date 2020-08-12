@@ -9,7 +9,7 @@ eleventyNavigation:
 {% include "components/sidekick.njk" %}
 
 <div id="featuredSection">
-  <h1>Featured Project</h1>
+  <h1 class="fade">Featured Project</h1>
   <h1>Mainline Sewer</h1>
   <p>April 2020 / Arlington TX / William Battle</p>
   <p>Integer ullamcorper donec feugiat faucibus nibh a vel praesent. Velit, tortor, justo, aliquet vel, aliquam, etiam magna semper. Diam nulla tortor eu, vulputate vitae nisl, malesuada ligula nibh. </p>
@@ -34,14 +34,14 @@ eleventyNavigation:
 </div>
 
 <div>
-  <h1>Previous Projects</h1>
-  <div id="projectContainer">
+  <h1>Previous<br>Projects</h1>
+  <div class="triCard" id="projectContainer">
     {%- for projects in collections.projects %}
     <div>
       <img src="{{projects.data.featImage}}" alt="Image of the {{projects.data.name}} project">
-      <p>{{projects.data.name}}</p>
-      <p>{{projects.data.summary}}</p>
-      <a href="{{projects.url}}">Read more →</a>
+      <p><strong>{{projects.data.name}}</strong><br>
+      {{projects.data.summary}}<br>
+      <a href="{{projects.url}}">Read more →</a></p>
     </div>
     {%- endfor %}
   </div>

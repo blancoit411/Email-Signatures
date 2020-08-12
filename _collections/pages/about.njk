@@ -44,8 +44,8 @@ eleventyNavigation:
     <h1>Health & Safety</h1>
   </div>
 
-  <p>Tempus varius a aenean mauris sit consequat. Nulla elementum ac congue eu nisl viverra libero, tellus ut. Lectus dolor nunc sit lacinia leo. Scelerisque congue in neque, rhoncus mattis molestie quam ullamcorper.</p>
-  <a href="" target="_blank">Read about our regulatory body →</a>
+  <p class="standout">Tempus varius a aenean mauris sit consequat. Nulla elementum ac congue eu nisl viverra libero, tellus ut. Lectus dolor nunc sit lacinia leo. Scelerisque congue in neque, rhoncus mattis molestie quam ullamcorper.<br>
+  <a href="" target="_blank">Read about our regulatory body →</a></p>
 
 </div>
 
@@ -54,12 +54,12 @@ eleventyNavigation:
 
 <div id="teamSection">
   <h1>Our Team</h1>
-    <p>    
+    <p class="standout">    
       Dolor pretium non netus mi purus in hendrerit fringilla platea. Dui morbi nec pulvinar cras elit sed id massa. Imperdiet proin iaculis tempus dis nullam sed semper ipsum.
     </p>
 
     <!-- Team items are created by NETLIFY CMS pulling form Eleventy Collection -->
-      <div>
+      <div class="triCard">
         {%- for team in collections.team %} 
         <div>
           <img src="{{team.data.image}}" alt="Image of {{team.data.name}}">
