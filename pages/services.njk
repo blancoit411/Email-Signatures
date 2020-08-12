@@ -1,0 +1,47 @@
+---
+title: Our Services
+date: 2017-01-01T00:00:00.000Z
+permalink: /services/index.html
+eleventyNavigation:
+  key: Services
+  order: 1
+---
+
+<div id="servicesSection">
+  <h1>Our Services</h1>
+  <p>Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
+
+  <div id="servicesContainer">
+    {%- for services in collection.services %}
+    <div>
+      <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
+      <p>{{ services.data.name }}</p>
+      <p>{{ services.data.summary }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</div>
+
+<div id="equipmentSection">
+  <div>
+    <div>
+      <!-- Image -->
+    </div>
+    <div>
+      <h3>Equipment for sale</h3>
+      <p>Please reach out to us if you’re interested in purchasing or renting any of the equipment we have listed here.</p>
+      <a>Call us →</a>
+    </div>
+  </div>
+
+  <div>
+    {%- for equipment in collection.equipment %}
+    <div>
+      <img src="{{ equipment.data.image }}" alt="{{ equipment.data.name }} image">
+      <p>{{ equipment.data.name }} - {{ equipment.data.price }}</p>
+      <p>{{ equipment.data.desc }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+
+</div>
