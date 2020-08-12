@@ -1,5 +1,4 @@
 ---
-tags: equipment
 name: Big Digger
 price: $15000
 desc: This is a really big digger. It can dig big holes and stuff like that. You

@@ -1,5 +1,4 @@
 ---
-tags: projects
 name: Big Trench Dig
 location: Grand Praire
 person: William Battle

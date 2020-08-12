@@ -1,5 +1,4 @@
 ---
-tags: team
 name: Tobias Lasco
 role: Website Overseer
 desc: Even less dirty, just makes sure Luke doesn't break things.

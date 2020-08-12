@@ -51,7 +51,6 @@ collections:
     create: true
     slug: "{{fields.name}}"
     fields:
-      - {label: "Tags", name: "tags", widget: "hidden", default: "jobs"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Type", name: "type", widget: "string"}
@@ -64,7 +63,6 @@ collections:
     slug: "{{fields.name}}"
     media_folder: /static/uploads/equipment
     fields:
-      - {label: "Tags", name: "tags", widget: "hidden", default: "equipment"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Price", name: "price", widget: "string", default: "$1000"}
       - {label: "Description", name: "desc", widget: "string"}
@@ -78,7 +76,6 @@ collections:
     slug: "{{fields.name}}"
     media_folder: /static/uploads/projects
     fields:
-      - {label: "Tags", name: "tags", widget: "hidden", default: "projects"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Project Location", name: "location", widget: "string"}
       - {label: "Person of Interest", name: "person", widget: "string"}
@@ -96,7 +93,6 @@ collections:
     slug: "{{fields.name}}"
     media_folder: /static/uploads/team
     fields:
-      - {label: "Tags", name: "tags", widget: "hidden", default: "team"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Role", name: "role", widget: "string"}
       - {label: "Description", name: "desc", widget: "string"}
@@ -110,7 +106,6 @@ collections:
     slug: "{{fields.name}}"
     media_folder: /static/uploads/serviceIcon
     fields:
-      - {label: "Tags", name: "tags", widget: "hidden", default: "service"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Summary", name: "summary", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image"}
