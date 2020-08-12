@@ -5,7 +5,7 @@ backend:
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
-media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
+# media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
   # Our blog posts
@@ -47,7 +47,7 @@ collections:
   # Jobs
   - name: "jobs"
     label: "Jobs"
-    folder: "jobs"
+    folder: "/_collections/jobs"
     create: true
     slug: "{{fields.name}}"
     fields:
@@ -59,7 +59,7 @@ collections:
   # Equipment
   - name: "equipment"
     label: "Equipment for sale"
-    folder: "equipment"
+    folder: "/_collections/equipment"
     create: true
     slug: "{{fields.name}}"
     media_folder: /static/uploads/equipment
@@ -73,7 +73,7 @@ collections:
   # Projects
   - name: "projects"
     label: "Projects"
-    folder: "projects"
+    folder: "/_collections/projects"
     create: true
     slug: "{{fields.name}}"
     media_folder: /static/uploads/projects
@@ -91,7 +91,7 @@ collections:
   # Team
   - name: "Team"
     label: "Team"
-    folder: "team"
+    folder: "/_collections/team"
     create: true
     slug: "{{fields.name}}"
     media_folder: /static/uploads/team
@@ -105,7 +105,7 @@ collections:
   # Services
   - name: "Services"
     label: "Services"
-    folder: "services"
+    folder: "/_collections/services"
     create: true
     slug: "{{fields.name}}"
     media_folder: /static/uploads/serviceIcon
