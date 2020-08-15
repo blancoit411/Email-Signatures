@@ -3,18 +3,92 @@
 	--secondary: white;
 	--background: white;
 	--contentWidth: 1000px;
+	--lightGrey: #E5E5E5;
 }
 
-*, *:before, *:after {
+/* DEV.TO RESET */
+
+/* Box sizing rules + fonts */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: 'Work Sans', "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-html,
-body {
-	padding: 0;
-	margin: 0;
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
 }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
 
 body {
 	display: grid;
@@ -152,12 +226,10 @@ nav ul > li a {
 }
 
 
-nav ul > li:first-of-type a{
+nav ul > li:first-of-type a, svg{
 	padding: 0;
+	transform: translateY(-0.5em);
 	
-}
-nav ul > li:first-of-type a > img{
-transform: translateY(-0.5em);
 }
 
 nav ul > li:last-of-type a{
@@ -186,7 +258,7 @@ main > section > article > * {
 	margin-bottom: .5em;
 }
 
-/* Post Tags */
+/* Post Tags
 a[rel="tag"],
 a[rel="tag"]:visited {
 	display: inline-block;
@@ -213,7 +285,7 @@ a[rel="tag"]:hover {
 
 a[rel="tag"]:last-child {
 	margin-right: 0;
-}
+} */
 
 /* Contact Form */
 form {
@@ -238,6 +310,7 @@ input,
 textarea {
 	border: 1px solid black;
 	resize: vertical;
+	transition:all 0.15s;
 }
 
 button {
@@ -253,8 +326,11 @@ button {
 	}
 }
 
+input:focus,
+textarea:focus {
+	box-shadow: inset 0px 0px 0px 2px rgba(0,0,0,1);
 
-
+}
 
 
 
@@ -304,7 +380,7 @@ footer a[href] {
 #officeHrsDate {
 	position: absolute;
 	text-align: right;
-	transform: translate(-45px, calc(-100% - 2em));
+	transform: translate(-40px, calc(-100%));
 }
 
 #officeHrsDate > span {
@@ -409,8 +485,6 @@ div.fiftySplit {
 
 div.fiftySplit > div{
 	width: 50%;
-	background: coral;
-	border: red solid 4pt;
 	padding: 0;
 }
 
@@ -425,9 +499,9 @@ div.fiftySplit > div:last-of-type{
 
 
 
-
-
-
+/*  									*/
+/* 		ABOUT PAGE SPECIFIC STYLING 	*/
+/*  									*/
 
 div#valuesSection{
 	padding-top: 75px;
@@ -438,12 +512,91 @@ div#valuesSection > h1{
 	top: 0;
 }
 
+div#healthFifty{
+	margin-top: 75px;
+	margin-bottom: 25px;
+}
+
+div#healthFifty>div{
+	background: var(--lightGrey);
+	display: flex;
+	justify-content: center;
+}
+div#healthFifty>div:last-of-type{
+background-image:url(/static/uploads/projects/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
+opacity: 0.7;
+background-position: center;
+background-size: cover;
+}
 
 h1#healthHeader {
+	display: inline-block;
 	text-align: center;
 	background: white;
 	position: relative;
-	transform: translateX(calc(50%));
+	right: -50%;
 	margin: 150px 0;
-	
+	padding: 5px 50px;
+	z-index: 10;	
+}
+
+div#teamSection{
+	margin-top: 75px;
+}
+
+
+div#historySection{
+	margin-top: 75px;
+	margin-bottom: -3em;
+}
+
+
+div#historySection.fiftySplit > div:first-of-type{
+	background-image:url(/static/uploads/projects/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	opacity: 0.7;
+}
+
+div#historySection.fiftySplit > div:last-of-type{
+	background: var(--lightGrey);
+	padding: 50px 0;
+}
+
+div#historySection.fiftySplit>div:last-of-type>*{
+	max-width: 500px;
+	padding: 0 25px;
+}
+
+
+
+
+
+
+
+
+/*  									*/
+/* 		CAREER PAGE SPECIFIC STYLING 	*/
+/*  									*/
+
+
+div#careerSection table{
+	margin: 75px 0;
+	width: 100%;
+	font-size: 1.4em;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div#careerSection td,th{
+	white-space: nowrap;
+	padding: 15px 25px;
+	border-bottom: 1pt solid var(--lightGrey);
+
+}
+
+div#careerSection th{
+border-bottom: none;
+padding: 0 25px;
 }
