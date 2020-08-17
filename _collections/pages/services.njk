@@ -23,26 +23,25 @@ eleventyNavigation:
   </div>
 </div>
 
-<div id="equipmentSection">
+<div id="equipmentHeading" class="fiftySplit">
   <div>
-    <div>
-      <!-- Image -->
-    </div>
-    <div>
-      <h3>Equipment for sale</h3>
-      <p>Please reach out to us if you’re interested in purchasing or renting any of the equipment we have listed here.</p>
-      <a>Call us →</a>
-    </div>
+    <!-- Image -->
   </div>
-
   <div>
-    {%- for equipment in collections.equipment %}
+    <h3>Equipment for sale</h3>
+    <p class="standout">Please reach out to us if you’re interested in purchasing any of the equipment we have listed here.<br>
+    <a href="/contact">Call us →</a></p>
+  </div>
+</div>
+
+<div id="equipmentSection">
+  {%- for equipment in collections.equipment %}
+  <div>
+    <img src="{{ equipment.data.image }}" alt="{{ equipment.data.name }} image">
     <div>
-      <img src="{{ equipment.data.image }}" alt="{{ equipment.data.name }} image">
       <p>{{ equipment.data.name }} - {{ equipment.data.price }}</p>
       <p>{{ equipment.data.desc }}</p>
     </div>
-    {%- endfor %}
   </div>
-
+  {%- endfor %}
 </div>

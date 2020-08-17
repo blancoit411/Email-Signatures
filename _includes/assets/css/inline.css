@@ -486,6 +486,9 @@ div.fiftySplit {
 div.fiftySplit > div{
 	width: 50%;
 	padding: 0;
+	background-position: center;
+	background-size: cover;
+	background-color: var(--lightGrey);
 }
 
 div.fiftySplit > div:last-of-type{
@@ -599,4 +602,119 @@ div#careerSection td,th{
 div#careerSection th{
 border-bottom: none;
 padding: 0 25px;
+}
+
+
+
+
+
+/*  										*/
+/* 		PROJECTS PAGE SPECIFIC STYLING 		*/
+/*  										*/
+
+
+div#featuredSection{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+}
+
+
+div#featuredSection > h1{
+	grid-column: 1 / span 2;
+}
+
+div#featuredSection > img {
+	grid-area: 3 / 1 / span 5 / span 1;
+}
+
+div#featuredSection > p:last-child{
+	grid-area: 8 / 1 / span 1 / span 2 ;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+div#featuredSection svg {
+	width: 40px;
+	margin: 5px;
+}
+
+div#featuredSection > div {
+	display: flex;
+	flex-direction: row;
+}
+
+div#featuredSection > p#projectDate{
+	position: absolute;
+	text-align: right;
+	right: 0;
+    top: 110px;
+}
+
+
+div#previousSection{
+	margin-top: 100px;
+}
+
+div#previousSection>h1{
+	/* line-height: 90%; */
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  										*/
+/* 		SERVICES PAGE SPECIFIC STYLING 		*/
+/*  										*/
+
+
+div#equipmentHeading{
+	margin: 75px 0;
+}
+
+div#equipmentHeading.fiftySplit > div {
+	background-color:var(--lightGrey);
+	padding:50px 0;
+}
+
+div#equipmentHeading.fiftySplit > div:first-child{
+	opacity: 0.5;
+	background-image: url(/static/uploads/projects/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
+}
+div#equipmentHeading.fiftySplit > div>*{
+max-width: 500px;
+padding:0 25px;
+}
+
+
+div#equipmentSection{
+	padding: 0 25px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+
+
+div#equipmentSection > div {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--lightGrey);
+	width: calc(50% - 14px);
+	padding: 0;
+	margin: 7px;
+
+}
+
+div#equipmentSection > div > img {
+	height: 150px;
+	width: 150px;
+	margin-right: 25px;
 }
