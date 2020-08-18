@@ -10,13 +10,13 @@ eleventyNavigation:
 
 <div id="servicesSection">
   <h1>Our Services</h1>
-  <p>Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
+  <p class="standout">Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
 
-  <div id="servicesContainer">
+  <div class="servicesContainer">
     {%- for services in collections.services %}
     <div>
       <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
-      <p>{{ services.data.name }}</p>
+      <p><strong>{{ services.data.name }}</strong></p>
       <p>{{ services.data.summary }}</p>
     </div>
     {%- endfor %}

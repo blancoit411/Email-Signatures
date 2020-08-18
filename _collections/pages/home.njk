@@ -10,10 +10,11 @@ eleventyNavigation:
 {% include "components/hero.njk" %}
 
 <div id="serviceSummarySection">
-  <p>Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
-  <h1>Our Services</h1>
-  <div>
-    {%- for services in collections.services %}
+  <p class="standout center">Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
+  <h1 class="fade">Our Services</h1>
+  <div class="servicesContainer">
+    {%- for i in range(0,3) %}
+    {% set services = collections.services[i] %}
     <div>
       <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
       <p>{{ services.data.name }}</p>
@@ -26,8 +27,8 @@ eleventyNavigation:
 
 <div id="testimonialSection">
   <div>
-    <span>"</span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum id sagittis fringilla ipsum congue blandit suspendisse odio. Enim iaculis dictumst montes, non iaculis.</p>
+    <span class="fade">“</span>
+    <p class="standout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum id sagittis fringilla ipsum congue blandit suspendisse odio. Enim iaculis dictumst montes, non iaculis.</p>
     <p>John Smith</p>
     <p>City of Arlington Utility Engineering Manager</p>
     {# come back to this! <svg></svg> #}

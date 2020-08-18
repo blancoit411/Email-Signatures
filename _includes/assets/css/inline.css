@@ -4,6 +4,7 @@
 	--background: white;
 	--contentWidth: 1000px;
 	--lightGrey: #E5E5E5;
+	--darkGrey: #949494;
 }
 
 /* DEV.TO RESET */
@@ -92,7 +93,6 @@ select {
 
 body {
 	display: grid;
-	height: 100vh;
 	grid-template-rows: 1fr auto;
 	background-color: var(--background);
 }
@@ -497,6 +497,25 @@ div.fiftySplit > div:last-of-type{
 
 
 
+div.servicesContainer{
+	margin-top: 50px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+
+div.servicesContainer > div{
+width: 300px;
+margin-bottom: 75px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+div.servicesContainer > div > img {
+	width: 30px;
+	height: 30px;
+}
 
 
 
@@ -717,4 +736,64 @@ div#equipmentSection > div > img {
 	height: 150px;
 	width: 150px;
 	margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  										*/
+/* 		HOME PAGE SPECIFIC STYLING 		*/
+/*  										*/
+
+
+div#serviceSummarySection > h1 {
+	text-align: right;
+	margin-top: 50px;
+	margin-bottom: -70px;
+}
+
+div#serviceSummarySection > div.servicesContainer > div {
+	margin-bottom: 20px
+}
+
+
+div#testimonialSection
+{
+	background-color: var(--darkGrey);
+	width: 100%;
+
+	max-width: none;
+	margin: none;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+div#testimonialSection > div{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 100px;
+	padding-top: 150px;
+	padding-bottom: 90px;
+	position: relative;
+}
+
+
+div#testimonialSection > div > span{
+	font-family: 'Friz Quadrata';
+	font-size: 288pt;
+	position:absolute;
+	line-height: 288pt;
+	margin: -120px 0 0 -100px;
+}
+
+div#testimonialSection > div > a{
+	line-height: 64px;
 }
