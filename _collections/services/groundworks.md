@@ -5,5 +5,5 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
   bibendum tortor eleifend odio molestie, id hendrerit neque ultricies. In ut
   luctus dolor. Nulla eget velit arcu. Nunc blandit lorem nec ligula iaculis
   porta.
-icon: /static/uploads/serviceIcon/001-pressure.svg
+icon: /static/uploads/serviceIcon/016-leak.svg
 ---
