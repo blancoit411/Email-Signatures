@@ -74,14 +74,14 @@ collections:
     folder: "/_collections/projects"
     create: true
     slug: "{{fields.name}}"
-    media_folder: /static/uploads/projects
+    media_folder: /static/uploads
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Project Location", name: "location", widget: "string"}
       - {label: "Person of Interest", name: "person", widget: "string"}
       - {label: "Date of Project", name: "date", widget: "date", format 'MMM YYYY'}
       - {label: "Featured Image", name: "featImage", widget: "image"}
-      - {label: "Other Image", name: "images", widget: "image"}
+      - {label: "Other Image", name: "images", widget: "image", allow_multiple: true}
       - {label: "Summary Text", name: "summary", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   

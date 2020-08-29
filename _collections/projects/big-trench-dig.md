@@ -3,8 +3,8 @@ name: Big Trench Dig
 location: Grand Praire
 person: William Battle
 date: 2020-12-30T23:32:23.498Z
-featImage: /static/uploads/projects/matthew-t-rader-rl2bhqt-e74-unsplash.jpg
-images: /static/uploads/projects/old-hero-image.jpg
+featImage: /static/uploads/matthew-t-rader-rl2bhqt-e74-unsplash.jpg
+images: /static/uploads/old-hero-image.jpg
 summary: We made a really big trench, you should totally check it out.
 ---
 # Maeonias se estque quondam Ortygiam tracti
