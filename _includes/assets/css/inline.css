@@ -197,10 +197,11 @@ img {
 	margin: inherit;
 }
 
-
-
-
-
+@media screen and (max-width: 769px) {
+	.mobileHidden{
+		display:none;
+	}
+}
 /* Nav */
 
 nav{
@@ -209,6 +210,7 @@ nav{
 	width: 100%;
 	z-index: 1000;
 }
+
 
 nav > div > ul {
 	padding: 1em inherit;
@@ -818,4 +820,35 @@ div#testimonialSection > div > span{
 
 div#testimonialSection > div > a{
 	line-height: 64px;
+}
+
+
+
+
+@media screen and (max-width: 769px) {
+	nav{
+		background-color: var(--primary);
+		margin-top: 0;
+	}
+	
+	nav > div > ul {
+		flex-direction: column;
+	}
+	nav ul li {
+		margin: 15px 0px;
+	}
+
+	nav a{
+		color: var(--secondary);
+	}
+
+	nav svg{
+		fill: var(--secondary);
+		margin-left: 1.2em;
+	}
+
+	nav ul > li:last-of-type a{
+		background: var(--secondary);
+		color: var(--primary);
+	}
 }
