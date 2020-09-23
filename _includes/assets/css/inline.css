@@ -202,6 +202,7 @@ img {
 		display:none;
 	}
 }
+
 /* Nav */
 
 nav{
@@ -212,11 +213,14 @@ nav{
 }
 
 
-nav > div > ul {
-	padding: 1em inherit;
+#navLinks {
+	padding: 1em 1em;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
+	transition: transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+	opacity: 1;
+	margin-block-start: 0;
 }
 
 nav ul li {
@@ -229,24 +233,70 @@ nav ul > li a {
 }
 
 
-nav ul > li:first-of-type a, svg{
-	padding: 0;
-	transform: translateY(-0.5em);
-	
-}
-
 nav ul > li:last-of-type a{
 	background: black;
 	color: white;
 }
 
-nav ul li a[href]:not(:hover) {
-	text-decoration: none;
-}
 
-nav ul li a[data-current="current item"] {
+/* nav ul li a[data-current="current item"] {
 	text-decoration: solid;
-}
+} */
+
+
+#navToggle {
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+	width:50px;
+	height:50px;
+	padding:0;
+	margin:0;
+	z-index: 10;
+  }
+  #navToggle div {
+	position: relative;
+	top:calc(50% - 1px);
+	left:calc(50% - 10px);
+	background-color: var(--secondary);
+	height: 2px;
+	transform-origin: 50% 50%;
+	width: 20px;
+	padding:0;
+	margin:0;
+	/* transition: transform 0.3s ease-in-out; */
+  }
+  
+  #navToggle > div:first-of-type{
+	transform: translateY(-3px);
+  }
+  
+  #navToggle > div:last-of-type{
+	transform: translateY(3px);
+  }
+  
+  #navToggle div::after {
+	content:'';
+	position: absolute;
+	width:100%;
+	height:100%;
+	transform-origin: 0 0;
+	background-color: teal;
+	transform: scaleX(0);
+	/* transition: transform 0.3s ease-in-out; */
+  }
+  
+  #navToggle:hover div::after {
+	transform: scaleX(1);
+  }
+  
+  
+  
+
+
+
 
 /* Posts List */
 article {
@@ -826,13 +876,18 @@ div#testimonialSection > div > a{
 
 
 @media screen and (max-width: 769px) {
-	nav{
-		background-color: var(--primary);
+	nav{	
 		margin-top: 0;
+		position: fixed;
+		background-color: red;
+		height: 80px;
 	}
 	
-	nav > div > ul {
+	#navLinks {
+		background-color: var(--primary);
 		flex-direction: column;
+		height: 100vh;
+		justify-content: start;
 	}
 	nav ul li {
 		margin: 15px 0px;
@@ -851,4 +906,37 @@ div#testimonialSection > div > a{
 		background: var(--secondary);
 		color: var(--primary);
 	}
+
+	#navToggle{
+		display: block;
+	}
+
+	#navLinks.hidden{
+		/* display: none; */
+		opacity: 0;
+		transform: translateY(-100%);
+	  
+	  }
+	  
+	  #navToggle.rotated div::after
+	  {
+		transform-origin: 50% 50%;
+		background-color: white;
+	  }
+	  
+	  #navToggle.rotated div
+	  {
+		background-color: var(--secondary);
+	  }
+	  
+	  #navToggle.rotated > div:first-of-type
+	  {
+		transform: translateY(1px) rotate(45deg);
+	  }
+	  
+	  #navToggle.rotated > div:last-of-type
+	  {
+		transform: translateY(-1px) rotate(-45deg);
+	  }
+
 }

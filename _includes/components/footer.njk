@@ -1,7 +1,7 @@
 <footer>
   <div>
 
-    <div id="bcOverview">
+    <div id="bcOverview" class="mobileHidden">
       <h3>Blackrock Construction</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue cras non lacus sit eu. Ultricies lacus lacus dictum pharetra lectus tempus id. Nisl lacus enim, sapien, bibendum dolor. Eget dolor tellus vitae hendrerit et lacus suspendisse odio turpis. Blandit semper volutpat consectetur gravida enim, tortor sagittis. Feugiat accumsan potenti vulputate sed pulvinar vestibulum. Sit maecenas aliquam scelerisque purus.
 
@@ -9,48 +9,48 @@
       
     </div>
 
-      <div id="siteMap">
-        <h3>Links</h3>
-          {% set navPages = collections.all | eleventyNavigation %}
-        <ul>{%- for entry in navPages %}
-          <li>
-            <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-          </li>
-          {%- endfor %}
-        </ul>
-      </div>
-      <div>
-        <h3>Contact Us</h3>
-        <p>PO Box 2280 Mansfield<br>Texas 76063<br>(512) 392-5725</p>
-        <div id="officeHrsContainer">
-          <p><strong>Office Hours</strong>
-          <br>09:00 am – 05:00 pm
-          <br>09:00 am – 05:00 pm
-          <br>09:00 am – 05:00 pm
-          <br>09:00 am – 05:00 pm
-          <br>09:00 am – 05:00 pm
-          <br>Closed
-          <br>Closed</p>
-        
-          <p id="officeHrsDate">
-            <span id="Mon">Mon</span><br>
-            <span id="Tue">Tue</span><br>
-            <span id="Wed">Wed</span><br>
-            <span id="Thu">Thu</span><br>
-            <span id="Fri">Fri</span><br>
-            <span id="Sat">Sat</span><br>
-            <span id="Sun">Sun</span>
-          </p>
+    <div id="siteMap" class="mobileHidden">
+      <h3>Links</h3>
+        {% set navPages = collections.all | eleventyNavigation %}
+      <ul>{%- for entry in navPages %}
+        <li>
+          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
 
-          <img style = "margin-top:30px;" width = "60%" src="/static/branding/logoWhite.svg" alt="Blackrock Construction Logo" >
- 
-          
+    <div>
+      <h3>Contact Us</h3>
+      <p>PO Box 2280 Mansfield<br>Texas 76063<br>(512) 392-5725</p>
+      <div id="officeHrsContainer">
+        <p><strong>Office Hours</strong>
+        <br>09:00 am – 05:00 pm
+        <br>09:00 am – 05:00 pm
+        <br>09:00 am – 05:00 pm
+        <br>09:00 am – 05:00 pm
+        <br>09:00 am – 05:00 pm
+        <br>Closed
+        <br>Closed</p>
+      
+        <p id="officeHrsDate">
+          <span id="Mon">Mon</span><br>
+          <span id="Tue">Tue</span><br>
+          <span id="Wed">Wed</span><br>
+          <span id="Thu">Thu</span><br>
+          <span id="Fri">Fri</span><br>
+          <span id="Sat">Sat</span><br>
+          <span id="Sun">Sun</span>
+        </p>
 
-        </div>
-      </div>  
-      <div>
-      <p class="tinyParagraph">Created by <a target="_blank" href="https://whoistobias.me">@whoistobias</a></p>
-      <p class="tinyParagraph">Terms & Conditions • Copyright {{ site.buildYear }}</p>
+        <img style = "margin-top:30px;" width = "60%" src="/static/branding/logoWhite.svg" alt="Blackrock Construction Logo" >
+
       </div>
+    </div>
+      
+    <div>
+    <p class="tinyParagraph">Created by <a target="_blank" href="https://whoistobias.me">@whoistobias</a></p>
+    <p class="tinyParagraph">Terms & Conditions • Copyright {{ site.buildYear }}</p>
+    </div>
   </div>  
 </footer>
