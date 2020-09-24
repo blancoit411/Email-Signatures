@@ -18,32 +18,6 @@ function highlightDate() {
 }
 
 function navToggleEvent() {
-  let menuState = getComputedStyle(document.getElementById('navLinks')).opacity;
-
-  if (menuState == '1')
-  {
-    navClose();
-    return;
-  }
-  
-  if (menuState == '0')
-  {
-    navOpen();
-    return;
-  }
-}
-
-
-function navOpen()
-{
-  document.getElementById("navLinks").classList.remove('hidden');
-  document.getElementById("navToggle").classList.add('rotated');
-  return;
-}
-
-function navClose()
-{
-  document.getElementById("navLinks").classList.add('hidden');
-  document.getElementById("navToggle").classList.remove('rotated');
-  return;
+  document.getElementById("navLinks").classList.toggle('hidden');
+  document.getElementById("navToggle").classList.toggle('rotated');
 }
