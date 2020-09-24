@@ -177,7 +177,7 @@ code {
 	font-family: Work Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	line-height: 1rem;
 	max-width: 750px;
 }
@@ -218,6 +218,9 @@ nav{
 	z-index: 1000;
 }
 
+nav > div.contentWidth{
+	height: 0;
+}
 
 #navLinks {
 	padding: 1em 1em;
@@ -964,6 +967,16 @@ div#testimonialSection > div > a{
 
 	  footer > div{
 		  display: block;
-		  padding-left: 35px;
+		  padding-left: 20vw;
+	  }
+
+	  /* HERO + SIDEKICK */
+
+	  #hero{
+		  height: 500px;
+	  }
+
+	  #sidekick{
+		  height: 250px;
 	  }
 }
