@@ -198,13 +198,6 @@ a:hover{
 	opacity: 0.1;
 }
 
-
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 .center{
 	text-align: center;
 	margin: inherit;
@@ -411,9 +404,6 @@ textarea:focus {
 /* 				-------------			*/
 
 
-
-
-
 footer {
 	margin-top: 3em;
 	background: black;
@@ -461,6 +451,11 @@ footer a[href] {
 
 #officeHrsDate > span.currentDay{
 	opacity: 1;
+}
+
+#officeHrsContainer > img{
+	margin: 40px 0 25px 0;
+	width: 140px;
 }
 
 
@@ -895,6 +890,11 @@ div#testimonialSection > div > a{
 
 
 @media screen and (max-width: 769px) {
+
+
+	/* NAVIGATION */
+
+
 	nav{	
 		margin-top: 0;
 		position: fixed;
@@ -960,4 +960,10 @@ div#testimonialSection > div > a{
 		transform: translateY(-1px) rotate(-45deg);
 	  }
 
+	  /* FOOTER */
+
+	  footer > div{
+		  display: block;
+		  padding-left: 35px;
+	  }
 }
