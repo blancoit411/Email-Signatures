@@ -117,47 +117,58 @@ body>*>*>*{
 /*  						*/
 
 
-/* FLUID TYPOGRAPHY */
+/* Define minimum font size */
+html {
+    font-size: 16px;
+}
 
+/* Fluid typography formula */
+@media (min-width: 640px) and (max-width: 1439px) {
+	html {font-size: calc(16px + (20 - 16) * (100vw - 640px) / (1439 - 640));}
+}
 
+/* Define max font size */
+@media (min-width: 1440px) {
+    html {font-size: 20px;}
+}
 
 
 h1{
 	font-family: 'Friz Quadrata';
 	text-transform: uppercase;
-	font-size: 56px;
-	line-height: 74px;
+	font-size: 2.5rem;
+	line-height: 2.75rem;
 }
 
 h2 {
 	font-family: 'Friz Quadrata';
 	text-transform: uppercase;
-	font-size: 35px;
-	line-height: 46px;
+	font-size: 1.8rem;
+	line-height: 2rem;
 }
 
 h3 {
 	font-family: Work Sans;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 28px;
-	line-height: 33px;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
 }
 
 h4 {
 	font-family: Work Sans;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 18px;
-	line-height: 21px;
+	font-size: 1.2rem;
+	line-height: 1.3rem;
 }
 
 p.standout{
 	font-family: Work Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 23px;
-	line-height: 1.5;
+	font-size: 1.2rem;
+	line-height: 1.3rem;
 }
 
 p,
@@ -166,8 +177,8 @@ code {
 	font-family: Work Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.5;
+	font-size: 0.8rem;
+	line-height: 1rem;
 	max-width: 750px;
 }
 
@@ -255,8 +266,8 @@ nav ul li a[data-current="current item"] {
 #navToggle {
 	display: none;
 	position: absolute;
-	right: 15px;
-	top: 15px;
+	right: 5px;
+	top: 5px;
 	cursor: pointer;
 	width:50px;
 	height:50px;
@@ -381,11 +392,11 @@ button {
 	cursor: pointer;
 }
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
 	:root {
 		font-size: 1.1rem;
 	}
-}
+} */
 
 input:focus,
 textarea:focus {
@@ -687,7 +698,7 @@ div#historySection.fiftySplit>div:last-of-type>*{
 div#careerSection table{
 	margin: 75px 0;
 	width: 100%;
-	font-size: 1.4em;
+	font-size: 1.4rem;
 	text-align: left;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -888,11 +899,11 @@ div#testimonialSection > div > a{
 		margin-top: 0;
 		position: fixed;
 		background-color: var(--primary);
-		height: 80px;
+		height: 60px;
 	}
 
 	#logoContainer{
-		height: 80px;
+		height: 60px;
 	}
 	
 	#navLinks {
