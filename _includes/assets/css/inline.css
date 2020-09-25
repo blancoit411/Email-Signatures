@@ -137,7 +137,7 @@ h1{
 	font-family: 'Friz Quadrata';
 	text-transform: uppercase;
 	font-size: 2.5rem;
-	line-height: 2.75rem;
+	line-height: 3.25rem;
 }
 
 h2 {
@@ -168,7 +168,7 @@ p.standout{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.2rem;
-	line-height: 1.3rem;
+	line-height: 1.4rem;
 }
 
 p,
@@ -178,7 +178,7 @@ code {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 0.9rem;
-	line-height: 1rem;
+	line-height: 1.2rem;
 	max-width: 750px;
 }
 
@@ -440,6 +440,7 @@ footer a[href] {
 
 #officeHrsContainer{
 	position: relative;
+	margin-top: 20px;
 }
 
 #officeHrsDate {
@@ -458,7 +459,6 @@ footer a[href] {
 
 #officeHrsContainer > img{
 	margin: 40px 0 25px 0;
-	width: 140px;
 }
 
 
@@ -551,16 +551,15 @@ div.triCard>div>p {
 /* BI - INFO */
 
 div.biInfo{
-	display: flex;
+	display: grid;
 	position: relative;
 
-	flex-flow: row wrap;
-	justify-content: space-between;
-
+	grid-template-columns: 1fr 1fr;
 }
 
 div.biInfo > div{
-	width: calc(var(--contentWidth)/2);
+	max-width: calc(var(--contentWidth)/2);
+	margin-bottom: 25px;
 }
 
 
@@ -914,6 +913,8 @@ div#testimonialSection > div > a{
 		flex-direction: column;
 		height: 100vh;
 		justify-content: start;
+		position: relative;
+		z-index: -1;
 	}
 	nav ul li {
 		margin: 15px 0px;
@@ -942,41 +943,124 @@ div#testimonialSection > div > a{
 		transform: translateY(-100%);	  
 	  }
 	  
-	  #navToggle.rotated div::after
-	  {
-		transform-origin: 50% 50%;
-		background-color: white;
-	  }
-	  
-	  #navToggle.rotated div
-	  {
-		background-color: var(--secondary);
-	  }
-	  
-	  #navToggle.rotated > div:first-of-type
-	  {
-		transform: translateY(1px) rotate(45deg);
-	  }
-	  
-	  #navToggle.rotated > div:last-of-type
-	  {
-		transform: translateY(-1px) rotate(-45deg);
-	  }
+	#navToggle.rotated div::after
+	{
+	transform-origin: 50% 50%;
+	background-color: white;
+	}
+	
+	#navToggle.rotated div
+	{
+	background-color: var(--secondary);
+	}
+	
+	#navToggle.rotated > div:first-of-type
+	{
+	transform: translateY(1px) rotate(45deg);
+	}
+	
+	#navToggle.rotated > div:last-of-type
+	{
+	transform: translateY(-1px) rotate(-45deg);
+	}
 
-	  /* FOOTER */
+	/* FOOTER */
 
-	  footer > div{
-		  display: block;
-		  padding-left: 20vw;
-	  }
+	footer > div{
+		display: block;
+		width: fit-content;
+		text-align: center;
+	}
 
-	  /* HERO + SIDEKICK */
+	#officeHrsDate {
+		transform: translate(-35px,calc(-100%));
+	}
 
-	  #hero{
-		  height: 500px;
-	  }
 
-	  #sidekick{
-		  height: 250px;
-	  }
+	/* HERO + SIDEKICK */
+
+	#hero{
+		height: 500px;
+	}
+
+	#sidekick{
+		height: 250px;
+	}
+
+	/* MULTI USE ELEMENTS */
+
+	div.servicesContainer>div{
+		width: auto;
+		margin-bottom: 35px;
+	}
+
+	div.fiftySplit{
+		flex-direction: column;
+	}
+
+	div.fiftySplit>div{
+		width: 100%;
+		min-height: 200px;
+	}
+
+	@media screen and (max-width: 550px) {
+	div.biInfo{
+		grid-template-columns: 1fr;
+	}	
+}
+
+	/*										  	*/
+	/* 		PAGE SPECIFIC MOBILE STYLING		*/
+	/*										  	*/
+
+
+
+	/* HOME */
+	div#serviceSummarySection>h1{
+		text-align: left;
+	}
+
+
+	div#testimonialSection>div{
+		padding-left: 25px;
+	}
+
+	div#testimonialSection>div>span{
+		font-size: 227pt;
+		margin: -140px 0 0 -20px;
+	}
+
+
+	/* SERVICES */
+	div#equipmentSection>div {
+
+	width: auto;
+	}
+
+	/* CAREERS */
+	div#careerSection table{
+		font-size: initial;
+	}
+
+	div#careerSection td{
+		padding: 7px 7px;
+	}
+	div#careerSection th{
+		padding: 0 7px;
+	}
+
+	/* ABOUT */
+	h1#healthHeader{
+		right: 0;
+		margin: 73px 0;
+	}
+
+	div#healthFifty>div:last-of-type {
+		display: none;
+	}
+
+	div#historySection.fiftySplit>div:last-of-type>*{
+		max-width: initial;
+	}
+
 }
