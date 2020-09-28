@@ -553,7 +553,7 @@ div.triCard>div>img{
 }
 
 div.triCard>div>p {
-	margin: 0.8em 0.8em;
+	margin: 10px;
 }
 
 
@@ -792,7 +792,13 @@ div#previousSection>h1{
 	margin-bottom: 50px;
 }
 
+div#featProjectSection>div.triCard>div:first-of-type{
+	filter:none;
+}
 
+div#featProjectSection>div.triCard>div:first-of-type>h1{
+	margin: 10px;
+}
 
 
 
