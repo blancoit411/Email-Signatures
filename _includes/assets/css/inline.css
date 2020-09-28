@@ -119,12 +119,12 @@ body>*>*>*{
 
 /* Define minimum font size */
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Fluid typography formula */
 @media (min-width: 640px) and (max-width: 1439px) {
-	html {font-size: calc(16px + (20 - 16) * (100vw - 640px) / (1439 - 640));}
+	html {font-size: calc(14px + (20 - 14) * (100vw - 640px) / (1439 - 640));}
 }
 
 /* Define max font size */
@@ -136,8 +136,8 @@ html {
 h1{
 	font-family: 'Friz Quadrata';
 	text-transform: uppercase;
-	font-size: 2.5rem;
-	line-height: 3.25rem;
+	font-size: 2.25rem;
+	line-height: 3rem;
 }
 
 h2 {
@@ -223,7 +223,7 @@ nav{
 	z-index: 1000;
 }
 
-nav > div.contentWidth{
+nav > div{
 	height: 0;
 }
 
@@ -504,13 +504,13 @@ footer a[href] {
 	font-size: 1.3em;
 }
 #hero > h1 > span:nth-of-type(2){
-	margin-top:-15px;
+	margin-top:-12px;
 	font-size: 0.8em;
 }
 #hero > h1 > span:nth-of-type(3){
-	font-size: 1em;
+	font-size: 0.9em;
 	background: white;
-	padding: 3px 40px;
+	padding: 3px 15px;
 }
 
 #sidekick {
@@ -702,8 +702,8 @@ div#historySection.fiftySplit>div:last-of-type>*{
 
 
 div#careerSection table{
-	margin: 75px 0;
-	width: 100%;
+	margin: 75px 25px;
+	width: calc(100% - 50px);
 	font-size: 1.4rem;
 	text-align: left;
 	border-collapse: collapse;
@@ -1075,7 +1075,7 @@ div#testimonialSection > div > a{
 
 	/* CAREERS */
 	div#careerSection table{
-		font-size: initial;
+		font-size: 0.9rem;
 	}
 
 	div#careerSection td{
