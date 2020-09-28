@@ -223,7 +223,7 @@ nav > div.contentWidth{
 }
 
 #navLinks {
-	padding: 1em 1em;
+	padding: 25px;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
@@ -262,7 +262,7 @@ nav ul li a[data-current="current item"] {
 #navToggle {
 	display: none;
 	position: absolute;
-	right: 5px;
+	right: calc(10px + 1.2em);
 	top: 5px;
 	cursor: pointer;
 	width:50px;
@@ -446,7 +446,7 @@ footer a[href] {
 #officeHrsDate {
 	position: absolute;
 	text-align: right;
-	transform: translate(-40px, calc(-100%));
+	transform: translate(-45px, calc(-100%));
 }
 
 #officeHrsDate > span {
@@ -973,7 +973,20 @@ div#testimonialSection > div > a{
 	}
 
 	#officeHrsDate {
-		transform: translate(-35px,calc(-100%));
+		transform: translate(-15px,calc(-100%));
+	}
+
+	div#officeHrsContainer{
+		text-align: left;
+	}
+	
+	div#officeHrsContainer > p:first-of-type {
+		transform: translateX(25px);
+	}
+
+	div#officeHrsContainer > p > strong{
+		display: inline-block;
+    	transform: translateX(12px);
 	}
 
 
