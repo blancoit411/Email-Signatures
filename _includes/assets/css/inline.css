@@ -144,7 +144,7 @@ h2 {
 	font-family: 'Friz Quadrata';
 	text-transform: uppercase;
 	font-size: 1.8rem;
-	line-height: 2rem;
+	line-height: 2.6rem;
 }
 
 h3 {
@@ -152,7 +152,7 @@ h3 {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 1.4rem;
-	line-height: 1.6rem;
+	line-height: 2.2rem;
 }
 
 h4 {
@@ -173,13 +173,18 @@ p.standout{
 
 p,
 pre,
-code {
+code{
 	font-family: Work Sans;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 0.9rem;
 	line-height: 1.2rem;
 	max-width: 750px;
+
+}
+ul{
+margin-block-start: 0;
+margin-block-end:0;
 }
 
 a {
@@ -220,6 +225,10 @@ nav{
 
 nav > div.contentWidth{
 	height: 0;
+}
+
+div#logoContainer{
+	display: none;
 }
 
 #navLinks {
@@ -917,8 +926,9 @@ div#testimonialSection > div > a{
 		height: 60px;
 	}
 
-	#logoContainer{
+	div#logoContainer{
 		height: 60px;
+		display: block;
 	}
 	
 	#navLinks {
