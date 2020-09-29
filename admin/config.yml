@@ -109,3 +109,4 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Summary", name: "summary", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image"}
+      - {label: "Homepage?", name: "homepageVisible", widget: "boolean"}
