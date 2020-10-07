@@ -110,3 +110,23 @@ collections:
       - {label: "Summary", name: "summary", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image"}
       - {label: "Homepage?", name: "homepageVisible", widget: "boolean"}
+
+  # Hero Images
+  - name: "Hero Images"
+    label: "heroicImages"
+    folder: "/_collections/heroicImages"
+    create: true
+    media_folder: /static/uploads/
+    fields:
+      - {label: "Image", name: "image", widget: "image"}
+
+  # Testimonials
+  - name: "Testimonials"
+    label: "Testimonials"
+    folder: "/_collections/testimonials"
+    create: true
+    slug: "{{fields.name}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title or Job", name: "title", widget: "string"}
+      - {label: "Testimonial", name: "testimonial", widget: "string"}

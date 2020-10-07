@@ -14,7 +14,6 @@ function highlightDate() {
   let currentDay = days[new Date().getDay()];
   let selected = document.getElementById(currentDay);
   selected.classList.add("currentDay")
-
 }
 
 function navToggleEvent() {

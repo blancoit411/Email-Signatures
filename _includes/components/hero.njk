@@ -1,7 +1,33 @@
-<div id="hero" style="background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url({{ heroicImage }})">
+<div id="hero">
+
+<!-- Slider main container -->
+    <div class="heroImageRoll-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            {%- for heroicImages in collections.heroicImages %} 
+            <div class="swiper-slide">
+              <img src="{{team.data.image}}" alt="Hero Image">
+            </div>
+            {%- endfor %}
+        </div>
+    </div>
+
     <h1>
         <span>Blackrock</span>
         <span>Construction</span>
         <span>Make it work</span>
     </h1>
 </div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var heroImageRoll = new Swiper('.heroImageRoll-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+        delay: 1600,
+        },
+    });
+</script>

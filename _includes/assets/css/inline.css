@@ -478,12 +478,16 @@ footer a[href] {
 	opacity: 0.5;
 }
 
+.heroImageRoll-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
 #hero{
 	width: 100%;
+    height: 70vh;
 	max-width: none;
-	height: 70vh;
-	background-size: cover;
-	background-position: center;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -1121,3 +1125,7 @@ div#testimonialSection > div > a{
 		width: 100%;
 	}
 }
+
+
+
+
