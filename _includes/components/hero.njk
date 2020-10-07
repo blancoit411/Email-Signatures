@@ -5,10 +5,10 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            {%- for heroicImages in collections.heroicImages %} 
-            <div class="swiper-slide">
-              <img src="{{team.data.image}}" alt="Hero Image">
-            </div>
+            {%- for images in collections.heroicImages %} 
+                <div class="swiper-slide">
+                    <img src="{{images.data.image}}" alt="Hero Image">
+                </div>
             {%- endfor %}
         </div>
     </div>

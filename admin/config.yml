@@ -8,42 +8,6 @@ backend:
 media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
 
 collections:
-  # Our blog posts
-  # - name: "blog" # Used in routes, e.g., /admin/collections/blog
-  #   label: "Post" # Used in the UI
-  #   folder: "posts" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   fields: # The fields for each document, usually in front matter
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Publish Date", name: "date", widget: "datetime" }
-  #     - label: "Post Author"
-  #       name: "author"
-  #       widget: "relation"
-  #       collection: "authors"
-  #       searchFields: ["name", "github"]
-  #       valueField: "name"
-  #     - { label: "Summary", name: "summary", widget: "text" }
-  #     - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-  #     - { label: "Body", name: "body", widget: "markdown" }
-  # # Our pages e.g. About
-  # - name: "pages"
-  #   label: "Page"
-  #   folder: "pages"
-  #   create: false # Change to true to allow editors to create new pages
-  #   slug: "{{slug}}"
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Publish Date", name: "date", widget: "datetime" }
-  #     - { label: "Permalink", name: "permalink", widget: "string" }
-  #     - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-  #       name: "eleventyNavigation"
-  #       widget: "object"
-  #       fields:
-  #         - { label: "Key", name: "key", widget: "string" }
-  #         - { label: "Order", name: "order", widget: "number", default: 0 }
-  #     - { label: "Body", name: "body", widget: "markdown" }
-  
   # Jobs
   - name: "jobs"
     label: "Jobs"
@@ -86,7 +50,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   
   # Team
-  - name: "Team"
+  - name: "team"
     label: "Team"
     folder: "/_collections/team"
     create: true
@@ -99,7 +63,7 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
 
   # Services
-  - name: "Services"
+  - name: "services"
     label: "Services"
     folder: "/_collections/services"
     create: true
@@ -112,8 +76,8 @@ collections:
       - {label: "Homepage?", name: "homepageVisible", widget: "boolean"}
 
   # Hero Images
-  - name: "Hero Images"
-    label: "heroicImages"
+  - name: "heroicImages"
+    label: "Hero Images"
     folder: "/_collections/heroicImages"
     create: true
     media_folder: /static/uploads/
@@ -121,7 +85,7 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
 
   # Testimonials
-  - name: "Testimonials"
+  - name: "testimonials"
     label: "Testimonials"
     folder: "/_collections/testimonials"
     create: true
