@@ -30,9 +30,21 @@ eleventyNavigation:
 <div id="testimonialSection">
   <div>
     <span class="fade">“</span>
-    <p class="standout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum id sagittis fringilla ipsum congue blandit suspendisse odio. Enim iaculis dictumst montes, non iaculis.</p>
-    <p>John Smith</p>
-    <p>City of Arlington Utility Engineering Manager</p>
+    <!-- Slider main container -->
+    <div class="testimonial-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            {%- for text in collections.testimonials %} 
+                <div class="swiper-slide">
+                  <p class="standout">{{text.data.testimonial}}</p>
+                  <p>{{text.data.name}}</p>
+                  <p>{{text.data.title}}</p>
+                </div>
+            {%- endfor %}
+        </div>
+    </div>
+    
     {# come back to this! <svg></svg> #}
     <a href="/projects/">Read more feedback on our projects →</a>
   </div>
