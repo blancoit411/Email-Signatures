@@ -24,12 +24,13 @@ collections:
   # Equipment
   - name: "equipment"
     label: "Equipment for sale"
-    label_singular: "Equipment"
+    label_singular: "listing"
     description: "Here you can list equipment that is for sale, you can upload an image to be displayed, a name, price, and a description."
     folder: "/_collections/equipment"
     create: true
     slug: "{{fields.name}}"
     media_folder: /static/uploads/equipment
+    summary: "{{fields.name}} - {{fields.price}}"
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Price", name: "price", widget: "string", default: "$1000"}
