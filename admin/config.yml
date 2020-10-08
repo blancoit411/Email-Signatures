@@ -74,7 +74,11 @@ collections:
       - {label: "Summary", name: "summary", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image"}
       - {label: "Homepage?", name: "homepageVisible", widget: "boolean"}
-
+    view_filters:
+      - label: "Included on the homepage"
+        field: homepageVisible
+        pattern: true
+        
   # Hero Images
   - name: "heroicImages"
     label: "Hero Images"
@@ -91,6 +95,7 @@ collections:
     folder: "/_collections/testimonials"
     create: true
     slug: "{{fields.name}}"
+    summary: Testimonials are here
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Title or Job", name: "title", widget: "string"}
