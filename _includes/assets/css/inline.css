@@ -491,6 +491,7 @@ footer a[href] {
 	opacity: 0.4;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 #hero{
@@ -502,6 +503,7 @@ footer a[href] {
 	flex-direction: column;
 	margin-bottom: 50px;
 	text-align: center;
+
 }
 
 #hero > h1{
@@ -905,6 +907,7 @@ div#testimonialSection
 	margin: none;
 	margin-top: 100px;
 	margin-bottom: 100px;
+
 }
 
 div#testimonialSection > div{
