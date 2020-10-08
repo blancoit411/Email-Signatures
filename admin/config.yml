@@ -81,6 +81,7 @@ collections:
     folder: "/_collections/heroicImages"
     create: true
     media_folder: /static/uploads/
+    summary: {{image}}
     fields:
       - {label: "Image", name: "image", widget: "image"}
 
