@@ -657,7 +657,7 @@ div#healthFifty>div{
 	justify-content: center;
 }
 div#healthFifty>div:last-of-type{
-background-image:url(/static/uploads/projects/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
+background-image:url(/static/uploads/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
 opacity: 0.7;
 background-position: center;
 background-size: cover;
@@ -686,7 +686,7 @@ div#historySection{
 
 
 div#historySection.fiftySplit > div:first-of-type{
-	background-image:url(/static/uploads/projects/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
+	background-image:url(/static/uploads/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
 	background-size: cover;
 	background-position: center;
 	opacity: 0.7;
@@ -837,7 +837,7 @@ div#equipmentHeading.fiftySplit > div {
 
 div#equipmentHeading.fiftySplit > div:first-child{
 	opacity: 0.5;
-	background-image: url(/static/uploads/projects/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
+	background-image: url(/static/uploads/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
 }
 div#equipmentHeading.fiftySplit > div>*{
 max-width: 500px;
@@ -923,12 +923,36 @@ div#testimonialSection > div > span{
 	position:absolute;
 	line-height: 288pt;
 	margin: -120px 0 0 -100px;
+	cursor: default;
 }
 
 div#testimonialSection > div > a{
 	line-height: 64px;
+	position: relative;
+	z-index: 100;
 }
 
+.testimonial-container{
+	overflow: hidden;
+	width: calc(100vw - 125px);
+	max-width: 750px;
+	z-index: 100;
+	position: relative;
+}
+
+.testimonial-container .swiper-button-prev, .testimonial-container .swiper-button-next{
+	position: initial;
+	display: inline-block;
+	color: initial;
+	width: initial;
+	height: initial;
+	margin: 0 5px;
+}
+.testimonial-container .swiper-pagination{
+	position: initial;
+	display: inline-block;
+	width: initial;
+}
 
 
 
@@ -1063,11 +1087,11 @@ div#testimonialSection > div > a{
 	}
 
 	@media screen and (max-width: 550px) {
-	div.biInfo{
-		grid-template-columns: 1fr;
-	}	
-}
-
+	div.biInfo{grid-template-columns: 1fr;}	
+	}
+	.testimonial-container{
+		width: calc(100vw - 50px);
+	}
 	/*										  	*/
 	/* 		PAGE SPECIFIC MOBILE STYLING		*/
 	/*										  	*/
