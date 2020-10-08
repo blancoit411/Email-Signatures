@@ -78,14 +78,14 @@ collections:
       - label: "Included on the homepage"
         field: homepageVisible
         pattern: true
-        
+
   # Hero Images
   - name: "heroicImages"
     label: "Hero Images"
     folder: "/_collections/heroicImages"
     create: true
     media_folder: /static/uploads/
-    summary: {{image}}
+    # summary: {{image}}
     fields:
       - {label: "Image", name: "image", widget: "image"}
 
