@@ -1,0 +1,20 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	<body onload="highlightDate()">
+		
+		{% include "components/nav.njk" %}
+
+		<main>
+			<div>
+				{{ layoutContent | safe }}
+				<img src="{{ featImage }}">
+			<div>
+		</main>
+
+		{% include "components/footer.njk" %}
+	</body>
+
+</html>
