@@ -8,10 +8,20 @@
 		{% include "components/nav.njk" %}
 
 		<main>
-			<div>
+
+			<div id="sidekick" style="background-image:url({{ featImage }})"></div>
+			<div id="projectPage">
+				<div id="projectTitle">
+					<h1>{{ name }}</h1>
+					<h3>{{ location }} | {{ person }}</h3>
+				</div>
+
 				{{ layoutContent | safe }}
-				<img src="{{ featImage }}">
-			<div>
+				<div class="gallery">
+					<img src="{{ images }}">
+				</div>
+			</div>
+
 		</main>
 
 		{% include "components/footer.njk" %}

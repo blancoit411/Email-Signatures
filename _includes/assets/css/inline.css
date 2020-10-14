@@ -111,7 +111,6 @@ body>*>*>*{
 }
 
 
-
 /*  						*/
 /* 		Font Styling		*/
 /*  						*/
@@ -522,7 +521,7 @@ a#honorRoll > svg{
 }
 
 #hero > svg{
-	width: 500px;
+	width: 30vh;
 }
 
 /* #hero > h1{
@@ -659,7 +658,7 @@ div.servicesContainer > div > img {
 /*  									*/
 
 div#valuesSection{
-	padding-top: 75px;
+	padding-top: 50px;
 }
 
 div#valuesSection > h1{
@@ -697,6 +696,16 @@ h1#healthHeader {
 
 div#teamSection{
 	margin-top: 75px;
+}
+
+div.teamImages-container{
+	width: calc(100vw - 50px);
+	max-width: 950px;
+    height: 400px;
+    overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 50px 25px;
 }
 
 
@@ -835,11 +844,20 @@ div#featProjectSection>div.triCard>div:first-of-type>h1{
 }
 
 
+/* 		Project CMS PAGE STYLES			 */
 
+div#projectTitle{
+	background: white;
+	padding: 25px;
+	position: relative;
+	top: -125px;
+	margin-bottom: -100px;
+	width: fit-content;
+}
 
-
-
-
+div#projectPage p{
+	max-width: initial;
+}
 
 
 /*  										*/

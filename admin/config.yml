@@ -57,21 +57,16 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   
   # Team
-  - name: "team"
-    label: "Team"
-    label_singular: "Team Member"
-    description: "Your team members live here. Add a role, description and image."
+  - name: "teamImages"
+    label: "Team Images"
+    label_singular: "Team Image"
+    description: "Your team images live here. Upload or remove images from the slideshow on the about page."
     folder: "/_collections/team"
     create: true
     slug: "{{fields.name}}"
     media_folder: /static/uploads/team
-    summary: "{{fields.order}} - {{fields.name}}"
     fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Role", name: "role", widget: "string"}
-      - {label: "Description", name: "desc", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Order", name: "order", widget: "number", default: 20, value_type: "int", min: 1, max: 40, hint: "The lower the number the higher on the page the team member will be listed"}
   # Services
   - name: "services"
     label: "Services"
@@ -102,15 +97,15 @@ collections:
     fields:
       - {label: "Image", name: "image", widget: "image"}
 
-  # Testimonials
-  - name: "testimonials"
-    label: "Testimonials"
-    label_singular: "Testimonial"
-    description: "Upload testimonials here to have them included on the homepage."
-    folder: "/_collections/testimonials"
-    create: true
-    slug: "{{fields.name}}"
-    fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Title or Job", name: "title", widget: "string"}
-      - {label: "Testimonial", name: "testimonial", widget: "string"}
+  # # Testimonials
+  # - name: "testimonials"
+  #   label: "Testimonials"
+  #   label_singular: "Testimonial"
+  #   description: "Upload testimonials here to have them included on the homepage."
+  #   folder: "/_collections/testimonials"
+  #   create: true
+  #   slug: "{{fields.name}}"
+  #   fields:
+  #     - {label: "Name", name: "name", widget: "string"}
+  #     - {label: "Title or Job", name: "title", widget: "string"}
+  #     - {label: "Testimonial", name: "testimonial", widget: "string"}

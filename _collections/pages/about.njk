@@ -54,12 +54,36 @@ eleventyNavigation:
 
 <div id="teamSection">
   <h1>Our Team</h1>
-    <p class="standout">    
-      Dolor pretium non netus mi purus in hendrerit fringilla platea. Dui morbi nec pulvinar cras elit sed id massa. Imperdiet proin iaculis tempus dis nullam sed semper ipsum.
-    </p>
+  <p class="standout">    
+    Dolor pretium non netus mi purus in hendrerit fringilla platea. Dui morbi nec pulvinar cras elit sed id massa. Imperdiet proin iaculis tempus dis nullam sed semper ipsum.
+  </p>
 
+  <div class="teamImages-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          {%- for images in collections.teamImages %} 
+              <div class="swiper-slide">
+                  <img src="{{images.data.image}}" alt="Team Image">
+              </div>
+          {%- endfor %}
+      </div>
+  </div>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      var teamImageRoll = new Swiper('.teamImages-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          autoplay: {
+          delay: 3200,
+          },
+      });
+  </script>
     <!-- Team items are created by NETLIFY CMS pulling form Eleventy Collection -->
-      <div class="triCard">
+      {# <div class="triCard">
         {%- for team in collections.team %} 
         <div>
           <img src="{{team.data.image}}" alt="Image of {{team.data.name}}">
@@ -68,7 +92,7 @@ eleventyNavigation:
           <p>{{team.data.desc}}</p>
         </div>
         {%- endfor %}
-    </div>
+    </div> #}
 </div>
 
 <div id="historySection" class="fiftySplit">
