@@ -1,5 +1,5 @@
 ---
-name: Jocie Morgan
+name: "Business Development "
 location: Arlington
-type: Part-time
+type: Full-time
 ---
