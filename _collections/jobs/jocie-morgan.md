@@ -1,5 +1,5 @@
 ---
 name: "Business Development "
-location: Arlington
+location: Texas
 type: Full-time
 ---
