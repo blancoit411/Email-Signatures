@@ -4,8 +4,8 @@ location: Waco, TX
 person: "BlackRock "
 date: 2020-12-30T23:32:23.498Z
 featImage: /static/uploads/thumbnail_20191015_110134.jpg
-images: /static/uploads/Old Hero Image.jpg
-summary: We made a really big trench, you should totally check it out.
+images: /static/uploads/thumbnail_20180417_133430.jpg
+summary: No matter the challenge Team BlackRock is always up for the task!
 ---
 # Maeonias se estque quondam Ortygiam tracti
 
