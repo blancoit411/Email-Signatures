@@ -3,7 +3,7 @@ name: Current Public Infrastructure Projects
 location: Waco, TX
 person: "BlackRock "
 date: 2020-12-30T23:32:23.498Z
-featImage: /static/uploads/img_5910.jpg
+featImage: /static/uploads/resized_20190731_111425.jpeg
 images: /static/uploads/Old Hero Image.jpg
 summary: We made a really big trench, you should totally check it out.
 ---
