@@ -1,3 +1,3 @@
 ---
-image: /static/uploads/jamar-penny-ZgmGq_eFmUs-unsplash.jpg
+image: /static/uploads/ext.jpg
 ---
