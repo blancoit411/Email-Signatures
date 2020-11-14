@@ -1,3 +1,3 @@
 ---
-image: /static/uploads/team/img_20190924_164902.jpg
+image: /static/uploads/team/thumbnail_20200526_162633.jpg
 ---
