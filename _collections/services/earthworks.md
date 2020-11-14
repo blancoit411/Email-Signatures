@@ -1,7 +1,7 @@
 ---
-name: Safety & Risk Planning
-summary: "Cras vitae ipsum nec dui viverra sodales id nec leo. Etiam porta
-  efficitur ex, ac rhoncus felis mattis et. "
+name: Boring and Tunneling Group
+summary: "BlackRock Construction has multiple boring and tunneling crews. We
+  specialize in difficult bores and high production projects. "
 icon: /static/uploads/serviceIcon/037-hard-hat.svg
 homepageVisible: false
 ---
