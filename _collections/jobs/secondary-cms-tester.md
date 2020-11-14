@@ -1,5 +1,5 @@
 ---
-name: Secondary CMS Tester
-location: Arlington
+name: Auger Bore Foreman or Crew
+location: Texas
 type: Full-time
 ---
