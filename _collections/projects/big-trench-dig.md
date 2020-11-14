@@ -7,11 +7,11 @@ featImage: /static/uploads/thumbnail_20191015_110134.jpg
 images: /static/uploads/thumbnail_20180417_133430.jpg
 summary: No matter the challenge Team BlackRock is always up for the task!
 ---
-# Maeonias se estque quondam Ortygiam tracti
+# Excellence not perfection is our daily battle cry. 
 
 ## Sparsas montis Elin ambiguis
 
-Lorem markdownum abstulit proceres. Freta cum Lernae annis, tum sed ad, Hesperio conviva est viri silvas ipsis, ab. Ille inmemor tiliae, fecissem *ratione flavus* facitis obuncis illa.
+Passion,purpose and productivity define the spirit of excellence that team BlackRock consistency delivers to each project. We believe that quality over quantity should be pursued on a minute by minute basis. 
 
 ## At habebas
 
