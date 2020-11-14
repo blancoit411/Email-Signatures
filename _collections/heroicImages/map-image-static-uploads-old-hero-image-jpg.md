@@ -1,3 +1,3 @@
 ---
-image: /static/uploads/Old Hero Image.jpg
+image: /static/uploads/20200526_201904-003-.jpg
 ---
