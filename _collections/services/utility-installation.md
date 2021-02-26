@@ -1,6 +1,9 @@
 ---
 name: Utility Installation
-summary: "Cras vitae ipsum nec dui viverra sodales id nec leo. Etiam porta efficitur ex, ac rhoncus felis mattis et. "
+summary: The main staple of our business is installing utilities. This includes
+  water, sewer and storm drain installation. We are prepared to complete lift
+  station construction, directional drilling, deep pipe installations, and hard
+  rock challenges.
 icon: /static/uploads/serviceIcon/019-manometer.svg
 homepageVisible: false
 ---
