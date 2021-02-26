@@ -5,5 +5,5 @@ summary: The main staple of our business is installing utilities. This includes
   station construction, directional drilling, deep pipe installations, and hard
   rock challenges.
 icon: /static/uploads/serviceIcon/019-manometer.svg
-homepageVisible: false
+homepageVisible: true
 ---
