@@ -1,7 +1,8 @@
 ---
 name: Commercial Construction
-summary: "Cras vitae ipsum nec dui viverra sodales id nec leo. Etiam porta
-  efficitur ex, ac rhoncus felis mattis et. "
+summary: From large scale site projects to smaller projects with a level of
+  difficulty that requires some expertise. BlackRock has the team prepared to
+  exceed any expectation.
 icon: /static/uploads/serviceIcon/030-engineer.svg
 homepageVisible: true
 ---
