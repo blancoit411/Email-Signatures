@@ -1,0 +1,25 @@
+---
+title: Equipment
+permalink: /equipment/index.html
+heroicImage: /static/uploads/matthew-t-rader-rl2bhqt-e74-unsplash.jpg
+eleventyNavigation:
+  key: Equipment
+  order: 4
+---
+{% include "components/sidekick.njk" %}
+
+    <h3>Equipment for sale</h3>
+    <p class="standout">Please reach out to us if you’re interested in purchasing any of the equipment we have listed here.<br>
+    <a href="/contact">Call us →</a></p>
+
+<div id="equipmentSection">
+  {%- for equipment in collections.equipment %}
+  <div>
+    <img src="{{ equipment.data.image }}" alt="{{ equipment.data.name }} image">
+    <div>
+      <p>{{ equipment.data.name }} - {{ equipment.data.price }}</p>
+      <p>{{ equipment.data.desc }}</p>
+    </div>
+  </div>
+  {%- endfor %}
+</div>

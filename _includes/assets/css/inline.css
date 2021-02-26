@@ -665,7 +665,7 @@ background-position: center;
 background-size: cover;
 }
 
-h1#healthHeader {
+#healthHeader {
 	display: inline-block;
 	text-align: center;
 	background: white;
@@ -1088,10 +1088,6 @@ div#testimonialSection > div > a{
 
 	#hero{
 		height: 500px;
-	}
-
-	#hero svg{
-		width: 350px;
 	}
 
 	#hero img{
