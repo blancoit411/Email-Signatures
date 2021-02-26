@@ -8,9 +8,14 @@ eleventyNavigation:
   order: 0
 ---
 {% include "components/hero.njk" %}
+<div id="callToAction">
+  {% include "static/branding/logoWBG.svg" %}
+  <p class="standout center">Blackrock is a professional construction company with over 80 years of combined experience. All of our resources are focused on completing your project with the highest standards in mind.
+  <br><a href="/contact">Contact us now →</a>
+  </p>
+</div>
 
 <div id="serviceSummarySection">
-  <p class="standout center">Blackrock Construction brings generational experience to construction projects exceeding the highest industry standards ensuring our customer’s success.</p>
   <h1 class="fade">Our Services</h1>
   <div class="servicesContainer">
     {%- for i in range(0,3) %}
