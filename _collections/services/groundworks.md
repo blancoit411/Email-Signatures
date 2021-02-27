@@ -5,5 +5,5 @@ summary: BlackRock has a heavy concentration in Heavy Civil infrastructure
   utility systems. We have multiple tunneling,pipe installation and trenching
   crews.
 icon: /static/uploads/serviceIcon/022-loader.svg
-homepageVisible: true
+homepageVisible: false
 ---

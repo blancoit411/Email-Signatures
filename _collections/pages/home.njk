@@ -18,13 +18,14 @@ eleventyNavigation:
 <div id="serviceSummarySection">
   <h1 class="fade">Our Services</h1>
   <div class="servicesContainer">
-
+    {% set j = 0 %}
     {%- for i in range(0,collections.services | length) %}
-      {% if collections.services[i].data.homepageVisible %}
+      {% if collections.services[i].data.homepageVisible and j < 3 %}
         {% set services = collections.services[i] %}
+        {% set j = j + 1 %}
         <div>
           <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
-          <p>{{loop.index}}{{ services.data.name }}</p>
+          <p><strong>{{ services.data.name }}</strong></p>
           <p>{{ services.data.summary }}</p>
         </div>
       {% endif %}
