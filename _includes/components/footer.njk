@@ -19,9 +19,11 @@
       </ul>
     </div> #}
 
-    <div>
+    <div id="bcContact">
+      {% include "static/branding/logoBBG.svg" %}
       <h3>Contact Us</h3>
       <p>PO Box 2280 Mansfield<br>Texas 76063<br>(512) 392-5725</p>
+      <a href="https://www.linkedin.com/in/donny-gamblin-536a6b79" target="_blank">{% include "static/branding/linkedin.svg" %}</a>
       <div id="officeHrsContainer">
         <p><strong>Office Hours</strong>
         <br>09:00 am – 05:00 pm
@@ -42,7 +44,6 @@
           <span id="Sun">Sun</span>
         </p>
         
-        <img src="/static/branding/logoWhite.svg" alt="Blackrock Construction Logo" >
         <a id="honorRoll" target="_blank" href="/admin/">
           {% include "static/branding/usFlag.svg" %}
           <p class="tinyParagraph"><strong>In God We Trust</strong></p>
@@ -51,8 +52,8 @@
     </div>
       
     <div>
-    <p class="tinyParagraph">Created by <a target="_blank" href="https://whoistobias.me">@lukebishop121</a></p>
-    <p class="tinyParagraph">Terms & Conditions • Copyright {{ site.buildYear }}</p>
+    <p class="tinyParagraph">Created by <a target="_blank" href="https://whoistobias.me">Luke Bishop</a><br>
+    Terms & Conditions • Copyright {{ site.buildYear }}</p>
     </div>
   </div>
 </footer>

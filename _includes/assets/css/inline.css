@@ -424,7 +424,7 @@ textarea:focus {
 
 
 footer {
-	margin-top: 3em;
+	margin-top: 6em;
 	background: black;
 	color: white;
 	padding: 1em 0;
@@ -451,14 +451,22 @@ footer #bcOverview {
 	padding-right: 75px;
 }
 
+footer #bcContact > svg:first-of-type{
+	margin-top: -68px;
+    margin-left: -50px;
+}
+footer .socialIcon {
+	width: 20px;
+	fill: white;
+	margin: 10px 10px 10px 0;
+	transition: opacity 0.25s;
+}
 
+footer .socialIcon:hover {
+	opacity: 0.7;
+}
 
 /* Styling Office Hours in Footer */
-
-#officeHrsContainer{
-	position: relative;
-	margin-top: 20px;
-}
 
 #officeHrsDate {
 	position: absolute;
@@ -481,17 +489,16 @@ footer #bcOverview {
 a#honorRoll{
    display: flex;
    flex-direction: row;
-   justify-content: center;
    align-items: center;
-   margin-bottom: 25px;
+   margin: 25px 0;
    cursor: default;
    text-decoration: none;
 }
 
 a#honorRoll > svg{
-	width: 25px;
-	height: 25px;
-	margin-right: 12px;
+    height: 22px;
+    margin-right: 12px;
+    margin-top: 10px;
 }
 
 .tinyParagraph{
@@ -673,7 +680,7 @@ background-size: cover;
 	position: relative;
 	right: -50%;
 	margin: 150px 0;
-	padding: 5px 50px;
+	padding: 50px 50px;
 	z-index: 10;	
 }
 
@@ -752,95 +759,13 @@ padding: 0 25px;
 
 
 
-/*  										*/
-/* 		PROJECTS PAGE SPECIFIC STYLING 		*/
-/*  										*/
+/*  												*/
+/* 			EQUIPMENT PAGE SPECIFIC STYLING 		*/
+/*  												*/
 
 
-div#featuredSection{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	position: relative;
-}
 
 
-div#featuredSection > h1{
-	grid-column: 1 / span 2;
-}
-
-div#featuredSection>h1:first-of-type{
-	margin-bottom: -5px;
-}
-
-div#featuredSection>h1:not(:first-of-type){
-	margin-bottom: 25px;
-}
-
-
-div#featuredSection > img {
-	grid-area: 3 / 1 / span 5 / span 1;
-	height: 100%;
-    object-fit: cover;
-}
-
-div#featuredSection > p:last-child{
-	grid-area: 8 / 1 / span 1 / span 2 ;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-div#featuredSection svg {
-	width: 40px;
-	margin-right: 15px;
-}
-
-div#featuredSection > div {
-	display: flex;
-	flex-direction: row;
-	margin: 15px 0;
-}
-
-div#featuredSection > p#projectMeta{
-	position: absolute;
-	text-align: right;
-	right: 0;
-	top: 79px;
-	margin-bottom: 10px;
-}
-
-
-div#previousSection{
-	margin-top: 100px;
-}
-
-div#previousSection>h1{
-	/* line-height: 90%; */
-	margin-bottom: 50px;
-}
-
-div#featProjectSection>div.triCard>div:first-of-type{
-	filter:none;
-}
-
-div#featProjectSection>div.triCard>div:first-of-type>h1{
-	margin: 10px;
-}
-
-
-/* 		Project CMS PAGE STYLES			 */
-
-div#projectTitle{
-	background: white;
-	padding: 25px;
-	position: relative;
-	top: -125px;
-	margin-bottom: -100px;
-	width: fit-content;
-}
-
-div#projectPage p{
-	max-width: initial;
-}
 
 
 /*  										*/
@@ -903,7 +828,7 @@ div#equipmentSection > div > img {
 
 
 /*  										*/
-/* 		HOME PAGE SPECIFIC STYLING 		*/
+/* 		HOME PAGE SPECIFIC STYLING 			*/
 /*  										*/
 
 
@@ -921,7 +846,7 @@ div#serviceSummarySection{
 	margin-bottom: 100px;
 }
 
-div#testimonialSection
+/* div#testimonialSection
 {
 	background-color: var(--darkGrey);
 	width: 100%;
@@ -978,7 +903,9 @@ div#testimonialSection > div > a{
 	position: initial;
 	display: inline-block;
 	width: initial;
-}
+} */
+
+
 
 
 
