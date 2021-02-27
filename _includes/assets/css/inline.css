@@ -906,6 +906,19 @@ div#testimonialSection > div > a{
 } */
 
 
+#featProjectSection{
+	display: grid;
+    grid-template-columns: 1fr 500px;
+}
+
+
+.projectImages-container{
+	overflow: hidden;
+	padding: 0;
+	margin: 0 25px;
+}
+
+
 
 
 

@@ -38,23 +38,23 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
   
   # Projects
-  - name: "projects"
-    label: "Projects"
-    label_singular: "Project"
-    description: "Structured like a blog, this is the most complicated CMS collection. They contain a large number of properties that you can fill out and then a body field. This is the bulk of the information that is displayed on the page when users want to read about a specific project."
-    folder: "/_collections/projects"
-    create: true
-    slug: "{{fields.name}}"
-    media_folder: /static/uploads
-    fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Project Location", name: "location", widget: "string"}
-      - {label: "Person of Interest", name: "person", widget: "string"}
-      - {label: "Date of Project", name: "date", widget: "date", format 'MMM YYYY'}
-      - {label: "Featured Image", name: "featImage", widget: "image", allow_multiple: false}
-      - {label: "Other Image", name: "images", widget: "image", allow_multiple: true}
-      - {label: "Summary Text", name: "summary", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  # - name: "projects"
+  #   label: "Projects"
+  #   label_singular: "Project"
+  #   description: "Structured like a blog, this is the most complicated CMS collection. They contain a large number of properties that you can fill out and then a body field. This is the bulk of the information that is displayed on the page when users want to read about a specific project."
+  #   folder: "/_collections/projects"
+  #   create: true
+  #   slug: "{{fields.name}}"
+  #   media_folder: /static/uploads
+  #   fields:
+  #     - {label: "Name", name: "name", widget: "string"}
+  #     - {label: "Project Location", name: "location", widget: "string"}
+  #     - {label: "Person of Interest", name: "person", widget: "string"}
+  #     - {label: "Date of Project", name: "date", widget: "date", format 'MMM YYYY'}
+  #     - {label: "Featured Image", name: "featImage", widget: "image", allow_multiple: false}
+  #     - {label: "Other Image", name: "images", widget: "image", allow_multiple: true}
+  #     - {label: "Summary Text", name: "summary", widget: "string"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
   
   # Team
   - name: "teamImages"
@@ -66,6 +66,17 @@ collections:
     media_folder: /static/uploads/team
     fields:
       - {label: "Image", name: "image", widget: "image"}
+  # Projects
+  - name: "projects"
+    label: "Example Projects"
+    label_singular: "Project"
+    description: "Your example projects live here. Upload or remove images and summaries from the slideshow on the home page."
+    folder: "/_collections/projects"
+    create: true
+    media_folder: /static/uploads/projects
+    fields:
+      - {label: "Project Image", name: "image", widget: "image"}
+      - {label: "Summary", name: "summary", widget: "string"}
   # Services
   - name: "services"
     label: "Services"

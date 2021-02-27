@@ -98,19 +98,33 @@ eleventyNavigation:
 
 <div id="featProjectSection">
   <div>
-    <div>
-      <h1>Featured<br>Projects</h1>
-      <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we can’t wait to get our hands dirty on!</p>
-    </div>
-    {%- for projects in collections.projects %}
-    <div>
-      <img src="{{projects.data.featImage}}" alt="Image of the {{projects.data.name}} project">
-      <p>{{projects.data.name}}<br>
-      {{projects.data.summary}}<br>
-      <a href="{{projects.url}}">Read more →</a></p>
-    </div>
-    {%- endfor %}
+    <h1>Featured<br>Projects</h1>
+    <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we do!</p>
   </div>
+  <div class="projectImages-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          {%- for images in collections.projects %} 
+              <div class="swiper-slide">
+                  <img src="{{images.data.image}}" alt="Team Image">
+                  <p>{{ images.data.summary }} Hwelleilsjaldfs sdfsdfjk</p>
+              </div>
+          {%- endfor %}
+      </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      var projectImageRoll = new Swiper('.projectImages-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          autoplay: {
+          delay: 6400,
+          },
+      });
+  </script>
 </div>
 
 {# Font Styling Section
