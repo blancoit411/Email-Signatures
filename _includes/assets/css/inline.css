@@ -179,6 +179,7 @@ code{
 	font-size: 0.9rem;
 	line-height: 1.2rem;
 	max-width: 750px;
+	margin-top: 10px;
 
 }
 ul{
@@ -432,14 +433,9 @@ footer {
 
 footer > div{
 	display: grid;
-	grid-template: 1fr 30px / 50% 1fr 1fr;
-	
-	grid-template-areas:
-	". . ."
-	"tinyText tinyText tinyText";
+    grid-template-columns: 1fr 250px;
 	
 }
-
 
 footer ul{
 	list-style: none;
@@ -448,6 +444,11 @@ footer ul{
 
 footer a[href] {
 	color: white;
+}
+
+footer #bcOverview {
+	max-width: 550px;
+	padding-right: 75px;
 }
 
 
@@ -462,7 +463,7 @@ footer a[href] {
 #officeHrsDate {
 	position: absolute;
 	text-align: right;
-	transform: translate(-45px, calc(-100%));
+	transform: translate(-45px, calc(-100% - 10px));
 }
 
 #officeHrsDate > span {

@@ -1,15 +1,14 @@
 <footer>
   <div>
-
     <div id="bcOverview" class="mobileHidden">
       <h3>Blackrock Construction</h3>
       <p>Blackrock Construction is a multi-generational family-owned construction company that works throughout the Texas market.  Our focus is growing a company that embodies our family's conservative and hardworking value system. We believe in a fundamental value system that puts God first, family second and a quality over quantity approach to our trade.
         
-      <br>We have built projects as far south as Harlingen and as far west as El Paso. If it's in Texas we are interested if it fits our abilities. We have trenched in many states including North Dakota, Pennsylvania, New Mexico, Nevada, Arkansas, Kentucky, and Oklahoma. We have never failed to complete a project, we have never paid any liquidated damages, nor have we ever had a successful bond claim. Our office is in Mansfield Texas and we have lay down yards in Abbott and Martindale Texas.</p>
+      </p><p>We have built projects as far south as Harlingen and as far west as El Paso. If it's in Texas we are interested if it fits our abilities. We have trenched in many states including North Dakota, Pennsylvania, New Mexico, Nevada, Arkansas, Kentucky, and Oklahoma. We have never failed to complete a project, we have never paid any liquidated damages, nor have we ever had a successful bond claim. Our office is in Mansfield Texas and we have lay down yards in Abbott and Martindale Texas.</p>
       
     </div>
 
-    <div id="siteMap" class="mobileHidden">
+    {# <div id="siteMap" class="mobileHidden">
       <h3>Links</h3>
         {% set navPages = collections.all | eleventyNavigation %}
       <ul>{%- for entry in navPages %}
@@ -18,7 +17,7 @@
         </li>
         {%- endfor %}
       </ul>
-    </div>
+    </div> #}
 
     <div>
       <h3>Contact Us</h3>
@@ -55,5 +54,5 @@
     <p class="tinyParagraph">Created by <a target="_blank" href="https://whoistobias.me">@lukebishop121</a></p>
     <p class="tinyParagraph">Terms & Conditions • Copyright {{ site.buildYear }}</p>
     </div>
-  </div>  
+  </div>
 </footer>

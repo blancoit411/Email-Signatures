@@ -18,16 +18,19 @@ eleventyNavigation:
 <div id="serviceSummarySection">
   <h1 class="fade">Our Services</h1>
   <div class="servicesContainer">
-    {%- for i in range(0,3) %}
+
+    {%- for i in range(0,collections.services | length) %}
       {% if collections.services[i].data.homepageVisible %}
         {% set services = collections.services[i] %}
-          <div>
-            <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
-            <p>{{ services.data.name }}</p>
-            <p>{{ services.data.summary }}</p>
-          </div>
+        <div>
+          <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
+          <p>{{loop.index}}{{ services.data.name }}</p>
+          <p>{{ services.data.summary }}</p>
+        </div>
       {% endif %}
     {%- endfor %}
+      
+    
   </div>
   <a href="/services/">See all that we have to offer →</a>
 </div>
