@@ -10,9 +10,8 @@ eleventyNavigation:
 
 <div id="careerSection">
   <h1 class="center">Find your future</h1>
-  <p class="standout center">All of our employees are committed to a strong work ethic, ensuring that the needs of our customers are met in a timely manner. Our employees are cross-trained to ensure the best machine performance, quality customer service and maximum production.<br>
-  <a href="/contact">
-    Contact us to apply →</a></p>
+  <p class="standout center">All of our employees are committed to a strong work ethic, ensuring that the needs of our customers are met in a timely manner. Our employees are cross-trained to ensure the best machine performance, quality customer service and maximum production.</p>
+  <p class="standout center"><a href="/contact">Contact us to apply →</a></p>
   
   <!-- Table containing DIV for layout purposes -->
   <!-- might be able to remove -->
@@ -26,10 +25,13 @@ eleventyNavigation:
       <!-- nunjuks javascript function that creates table rows for data from job collections -->
 
       {%- for jobs in collections.jobs %}
-      <tr>
+      <tr onclick=jobToggleDescription({{loop.index0}})>
         <td>{{ jobs.data.name }}</td>
         <td>{{ jobs.data.location }}</td>
         <td>{{ jobs.data.type }}</td>
+      </tr>
+      <tr>
+        <td colspan=3 class="jobDescription hidden" id="{{ loop.index0 }}">{{ jobs.data.description }}</td>
       </tr>
       {%- endfor %}
     </table>

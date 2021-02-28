@@ -20,3 +20,13 @@ function navToggleEvent() {
   document.getElementById("navLinks").classList.toggle('hidden');
   document.getElementById("navToggle").classList.toggle('rotated');
 }
+
+
+function jobToggleDescription(x) {
+  if (document.getElementById(x).innerHTML != ""){
+    document.getElementById(x).classList.toggle('hidden');
+  }
+  else {
+    alert("No description available for this position")
+  }
+}
