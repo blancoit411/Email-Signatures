@@ -654,6 +654,8 @@ div.square{
     height: 0;
 	padding: 100% 0 0 0;
 	position:relative;
+	background-position: center;
+	background-size: cover;
 }
 
 div.aspectInner{
@@ -800,6 +802,24 @@ div#careerSection td.jobDescription.hidden{
 /* 			EQUIPMENT PAGE SPECIFIC STYLING 		*/
 /*  												*/
 
+div#equipmentWrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 50px 0;
+	grid-gap: 50px;
+}
+
+div#equipmentWrapper > div {
+	background-color: var(--background);
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+	padding: 20px;
+
+}
+
+div#equipmentWrapper > div > img {
+
+}
+
 
 
 
@@ -808,50 +828,6 @@ div#careerSection td.jobDescription.hidden{
 /*  										*/
 /* 		SERVICES PAGE SPECIFIC STYLING 		*/
 /*  										*/
-
-
-div#equipmentHeading{
-	margin: 75px 0;
-}
-
-div#equipmentHeading.fiftySplit > div {
-	background-color:var(--lightGrey);
-	padding:50px 0;
-}
-
-div#equipmentHeading.fiftySplit > div:first-child{
-	opacity: 0.5;
-	background-image: url(/static/uploads/matthew-t-rader-rl2bhqt-e74-unsplash.jpg);
-}
-div#equipmentHeading.fiftySplit > div>*{
-max-width: 500px;
-padding:0 25px;
-}
-
-
-div#equipmentSection{
-	padding: 0 25px;
-	display: flex;
-	flex-flow: row wrap;
-}
-
-
-
-div#equipmentSection > div {
-	display: flex;
-	flex-direction: row;
-	background-color: var(--lightGrey);
-	width: calc(50% - 14px);
-	padding: 0;
-	margin: 7px;
-
-}
-
-div#equipmentSection > div > img {
-	height: 150px;
-	width: 150px;
-	margin-right: 25px;
-}
 
 
 

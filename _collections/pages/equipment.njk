@@ -8,18 +8,19 @@ eleventyNavigation:
 ---
 {% include "components/sidekick.njk" %}
 
-    <h3>Equipment for sale</h3>
-    <p class="standout">Please reach out to us if you’re interested in purchasing any of the equipment we have listed here.<br>
-    <a href="/contact">Call us →</a></p>
-
 <div id="equipmentSection">
-  {%- for equipment in collections.equipment %}
-  <div>
-    <img src="{{ equipment.data.image }}" alt="{{ equipment.data.name }} image">
+  <h1>Equipment for sale</h1>
+  <p class="standout">Please reach out to us if you’re interested in purchasing any of the equipment we have listed here.</p>
+  <p class="standout"><a href="/contact">Call us →</a></p>
+
+  <div id="equipmentWrapper">
+    {%- for equipment in collections.equipment %}
     <div>
-      <p>{{ equipment.data.name }} - {{ equipment.data.price }}</p>
-      <p>{{ equipment.data.desc }}</p>
+      <div class="square" style="background-image: url('{{ equipment.data.image }}')"></div>
+        <p><strong>{{ equipment.data.name }}</strong></p>
+        <p>{{ equipment.data.desc }}</p>
+        <p>{{ equipment.data.price }}</p>
     </div>
+    {%- endfor %}
   </div>
-  {%- endfor %}
 </div>
