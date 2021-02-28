@@ -106,23 +106,47 @@ eleventyNavigation:
       <div class="swiper-wrapper">
           <!-- Slides -->
           {%- for images in collections.projects %} 
-              <div class="swiper-slide">
-                  <img src="{{images.data.image}}" alt="Team Image">
-                  <p>{{ images.data.summary }} Hwelleilsjaldfs sdfsdfjk</p>
+              <div class="swiper-slide" >
+                  <div style="background-image:url('{{images.data.image}}')"></div>
+                  <p>{{ images.data.summary }}</p>
               </div>
           {%- endfor %}
       </div>
+          
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">
+        &lt
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-next">
+        &gt
+      </div>
   </div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
       var projectImageRoll = new Swiper('.projectImages-container', {
           // Optional parameters
           direction: 'horizontal',
           loop: true,
+          spaceBetween: 250,
           autoplay: {
           delay: 6400,
           },
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
       });
   </script>
 </div>

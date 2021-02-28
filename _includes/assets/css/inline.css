@@ -15,7 +15,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Work Sans', "Segoe UI", Helvetica, Arial, sans-serif;
+  /* font-family: 'Work Sans', "Segoe UI", Helvetica, Arial, sans-serif; */
 }
 
 /* Remove default padding */
@@ -119,6 +119,7 @@ body>*>*>*{
 /* Define minimum font size */
 html {
     font-size: 14px;
+	font-family: 'Work Sans', "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /* Fluid typography formula */
@@ -160,6 +161,14 @@ h4 {
 	font-weight: 600;
 	font-size: 1.2rem;
 	line-height: 1.3rem;
+}
+
+h5 {
+	font-family: Work Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
 }
 
 p.standout{
@@ -911,16 +920,40 @@ div#testimonialSection > div > a{
     grid-template-columns: 1fr 500px;
 }
 
+#featProjectSection p{
+	max-width: 300px;
+}
 
 .projectImages-container{
+	position: relative;
 	overflow: hidden;
 	padding: 0;
 	margin: 0 25px;
 }
 
+.projectImages-container .swiper-slide > div{
+	width: 450px;
+	height: 450px;
+	background-size: cover;
+}
 
-
-
+.projectImages-container .swiper-button-prev, .projectImages-container .swiper-button-next{
+	/* position: initial;
+	display: inline-block; */
+	color: initial;
+	/* width: initial;
+	height: initial;
+	margin: 0 5px;
+	top: unset;
+	bottom: 0; */
+}
+.projectImages-container .swiper-pagination{
+	/* position: initial;
+	display: inline-block;
+	width: initial; */
+	font-family: 'Friz Quadrata';
+	transform: translate(0, -25px);
+}
 
 @media screen and (max-width: 769px) {
 
