@@ -101,29 +101,35 @@ eleventyNavigation:
     <h1>Featured<br>Projects</h1>
     <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we do!</p>
   </div>
-  <div class="projectImages-container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-          <!-- Slides -->
-          {%- for images in collections.projects %} 
-              <div class="swiper-slide" >
-                  <div style="background-image:url('{{images.data.image}}')"></div>
-                  <p>{{ images.data.summary }}</p>
-              </div>
-          {%- endfor %}
-      </div>
-          
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev">
-        &lt
-      </div>
+  <div class="aspectContainer">
+    <div class="square">
+      <div class="aspectInner">
+        <div class="projectImages-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              {%- for images in collections.projects %} 
+                  <div class="swiper-slide" >
+                      <div style="background-image:url('{{images.data.image}}')"></div>
+                      <p>{{ images.data.summary }}</p>
+                  </div>
+              {%- endfor %}
+          </div>
+              
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            &lt
+          </div>
 
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-      <div class="swiper-button-next">
-        &gt
+          <div class="swiper-button-next">
+            &gt
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 
   <script>

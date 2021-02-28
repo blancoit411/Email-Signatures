@@ -246,9 +246,9 @@ nav{
 	margin-block-start: 0;
 }
 
-nav #logoContainer {
+/* nav #logoContainer {
 	margin-left: 10px;
-}
+} */
 
 nav >*>* {
 	padding: initial;
@@ -648,6 +648,11 @@ div.servicesContainer > div > img {
 	height: 30px;
 }
 
+div.swiper-container-initialized{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
 
 div.square{
 	max-width: 100%;
@@ -715,12 +720,7 @@ div#teamSection{
 div#teamSection .aspectContainer{
 	max-width: 600px;
 	margin: 50px 0;
-}
 
-div.teamImages-container{
-    overflow: hidden;
-	width: 100%;
-	height: 100%;
 }
 
 div.teamImages-container > div > div{
@@ -816,11 +816,6 @@ div#equipmentWrapper > div {
 
 }
 
-div#equipmentWrapper > div > img {
-
-}
-
-
 
 
 
@@ -859,66 +854,6 @@ div#serviceSummarySection{
 	margin-bottom: 100px;
 }
 
-/* div#testimonialSection
-{
-	background-color: var(--darkGrey);
-	width: 100%;
-
-	max-width: none;
-	margin: none;
-	margin-top: 100px;
-	margin-bottom: 100px;
-
-}
-
-div#testimonialSection > div{
-	max-width: 1000px;
-	margin: 0 auto;
-	padding-left: 100px;
-	padding-top: 150px;
-	padding-bottom: 90px;
-	position: relative;
-}
-
-
-div#testimonialSection > div > span{
-	font-family: 'Friz Quadrata';
-	font-size: 288pt;
-	position:absolute;
-	line-height: 288pt;
-	margin: -120px 0 0 -100px;
-	cursor: default;
-}
-
-div#testimonialSection > div > a{
-	line-height: 64px;
-	position: relative;
-	z-index: 100;
-}
-
-.testimonial-container{
-	overflow: hidden;
-	width: calc(100vw - 125px);
-	max-width: 750px;
-	z-index: 100;
-	position: relative;
-}
-
-.testimonial-container .swiper-button-prev, .testimonial-container .swiper-button-next{
-	position: initial;
-	display: inline-block;
-	color: initial;
-	width: initial;
-	height: initial;
-	margin: 0 5px;
-}
-.testimonial-container .swiper-pagination{
-	position: initial;
-	display: inline-block;
-	width: initial;
-} */
-
-
 #featProjectSection{
 	display: grid;
     grid-template-columns: 1fr 500px;
@@ -928,18 +863,13 @@ div#testimonialSection > div > a{
 	max-width: 300px;
 }
 
-.projectImages-container{
-	position: relative;
-	overflow: hidden;
-	padding: 0;
-	margin: 0 25px;
+div.projectImages-container > div > div > div{
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
 
-.projectImages-container .swiper-slide > div{
-	width: 450px;
-	height: 450px;
-	background-size: cover;
-}
 
 .projectImages-container .swiper-button-prev, .projectImages-container .swiper-button-next{
 	/* position: initial;
@@ -987,13 +917,18 @@ div#testimonialSection > div > a{
 		justify-content: start;
 		position: relative;
 		z-index: -1;
+		padding: 25px;
+		
 	}
+
+
 	nav ul li {
 		margin: 15px 0px;
 	}
 
 	nav a{
 		color: var(--secondary);
+		font-size: 1.6rem;
 	}
 
 	nav svg{
@@ -1004,6 +939,7 @@ div#testimonialSection > div > a{
 	nav ul > li:last-of-type a{
 		background: var(--secondary);
 		color: var(--primary);
+		margin-left: 15px;
 	}
 
 	#navToggle{
@@ -1045,7 +981,7 @@ div#testimonialSection > div > a{
 	}
 
 	#officeHrsDate {
-		transform: translate(-15px,calc(-100%));
+		transform: translate(-15px,calc(-100% - 10px));
 	}
 
 	div#officeHrsContainer{
@@ -1061,14 +997,14 @@ div#testimonialSection > div > a{
     	transform: translateX(12px);
 	}
 
+	a#honorRoll{
+		justify-content: center;
+	}
+
 
 	/* HERO + SIDEKICK */
 
 	#hero{
-		height: 500px;
-	}
-
-	#hero img{
 		height: 500px;
 	}
 
@@ -1105,20 +1041,23 @@ div#testimonialSection > div > a{
 
 
 	/* HOME */
+
+	div#callToAction > svg{
+		height: 150px;
+		margin-top: -75px;
+	}
+
 	div#serviceSummarySection>h1{
 		text-align: left;
 	}
 
-
-	div#testimonialSection>div{
-		padding-left: 25px;
+	div#featProjectSection{
+		grid-template-columns: 1fr;
 	}
-
-	div#testimonialSection>div>span{
-		font-size: 227pt;
-		margin: -140px 0 0 -20px;
+	
+	div#featProjectSection .aspectContainer{
+		margin-top: 30px;
 	}
-
 
 	/* SERVICES */
 	div#equipmentSection>div {
@@ -1139,9 +1078,10 @@ div#testimonialSection > div > a{
 	}
 
 	/* ABOUT */
-	h1#healthHeader{
+	#healthHeader{
 		right: 0;
-		margin: 73px 0;
+		margin: 73px 15px;
+		padding: 25px;
 	}
 
 	div#healthFifty>div:last-of-type {
@@ -1152,21 +1092,13 @@ div#testimonialSection > div > a{
 		max-width: initial;
 	}
 
-	/* PROJECTS */
+	/* EQUIPMENT */
 
-	div#featuredSection{
-		display: block;
-	}
-	div#featuredSection>p#projectMeta {
-		position: initial;
-		text-align: left;	
+	div#equipmentWrapper{
+		grid-template-columns: 1fr;
+		grid-gap:25px;
 	}
 
-	div#featuredSection>img {
-		max-height: 300px;
-		object-fit: cover;
-		width: 100%;
-	}
 }
 
 
