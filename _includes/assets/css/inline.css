@@ -246,9 +246,10 @@ nav{
 	margin-block-start: 0;
 }
 
-/* nav #logoContainer {
-	margin-left: 10px;
-} */
+nav #logoContainer {
+	width: 60px;
+	margin: 5px 0 -6px 5px;
+}
 
 nav >*>* {
 	padding: initial;
@@ -282,7 +283,10 @@ nav ul li a[data-current="current item"] {
 	text-decoration: underline solid;
 	;
 }
-
+#mobileLogoContainer {
+	display: none;
+	width: 100px;
+}
 
 #navToggle {
 	display: none;
@@ -903,10 +907,15 @@ div.projectImages-container > div > div > div{
 		border-radius: initial;
 		padding: initial;
 	}
+	nav #mobileLogoContainer{
+		display: block;
+		position: absolute;
+		left: 25px;
+		top: 16px;
+	}
 
 	div#logoContainer{
-		height: 60px;
-		display: block;
+		display: none;
 	}
 	
 	#navLinks {
@@ -917,6 +926,7 @@ div.projectImages-container > div > div > div{
 		position: relative;
 		z-index: -1;
 		padding: 25px;
+		margin-top: 50px;
 		
 	}
 
