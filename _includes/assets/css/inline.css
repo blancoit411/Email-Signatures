@@ -248,7 +248,7 @@ nav{
 
 nav #logoContainer {
 	width: 60px;
-	margin: 5px 0 -6px 5px;
+	margin: 4px 0 -4px 5px;
 }
 
 nav >*>* {
@@ -860,10 +860,36 @@ div#serviceSummarySection{
 #featProjectSection{
 	display: grid;
     grid-template-columns: 1fr 500px;
+	overflow: hidden;
 }
 
 #featProjectSection p{
 	max-width: 300px;
+}
+#featProjectSection > div:first-of-type *{
+	position: relative;
+	z-index: 20;
+}
+
+div#featProjectSection .aspectContainer{
+	position: relative;
+}
+
+div#featProjectSection .slideHide{
+	position: absolute;
+    background: red;
+    width: 50vw;
+    height: 110%;
+    top: -5%;
+    z-index: 5;
+}
+
+div#featProjectSection .slideHide{
+	left: calc(-50vw);
+}
+
+div#featProjectSection div.projectImages-container{
+	overflow: visible;
 }
 
 div.projectImages-container > div > div > div{
