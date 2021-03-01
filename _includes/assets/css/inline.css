@@ -118,13 +118,13 @@ body>*>*>*{
 
 /* Define minimum font size */
 html {
-    font-size: 14px;
+    font-size: 16px;
 	font-family: 'Work Sans', "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /* Fluid typography formula */
 @media (min-width: 640px) and (max-width: 1439px) {
-	html {font-size: calc(14px + (20 - 14) * (100vw - 640px) / (1439 - 640));}
+	html {font-size: calc(16px + (20 - 16) * (100vw - 640px) / (1439 - 640));}
 }
 
 /* Define max font size */
@@ -433,7 +433,7 @@ textarea:focus {
 
 
 footer {
-	margin-top: 6em;
+	margin-top: 6rem;
 	background: black;
 	color: white;
 	padding: 1em 0;
@@ -550,7 +550,6 @@ a#honorRoll > svg{
 	max-width: none;
 	height: 30vh;
 	background-size: cover;
-	opacity: 0.7;
 	background-position: center;
 	margin-bottom: 50px;
 }
@@ -730,7 +729,7 @@ div.teamImages-container > div > div{
 
 div#historySection{
 	margin-top: 75px;
-	margin-bottom: -3em;
+	margin-bottom: -6rem;
 }
 
 
@@ -928,7 +927,7 @@ div.projectImages-container > div > div > div{
 
 	nav a{
 		color: var(--secondary);
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 	}
 
 	nav svg{
@@ -1004,7 +1003,7 @@ div.projectImages-container > div > div > div{
 
 	/* HERO + SIDEKICK */
 
-	#hero{
+	#hero, #hero > div.swiper-container-initialized{
 		height: 500px;
 	}
 
@@ -1044,7 +1043,7 @@ div.projectImages-container > div > div > div{
 
 	div#callToAction > svg{
 		height: 150px;
-		margin-top: -75px;
+		margin-top: -65px;
 	}
 
 	div#serviceSummarySection>h1{
@@ -1101,6 +1100,10 @@ div.projectImages-container > div > div > div{
 
 }
 
-
+@media screen and (max-width: 1000px) {
+	nav{
+		left:initial;
+	}
+}
 
 
