@@ -96,49 +96,49 @@ eleventyNavigation:
   </div>
 </div> #}
 
+
+
 <div id="featProjectSection">
-  <div>
+  <div id="projectsIntro">
     <h1>Featured<br>Projects</h1>
     <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we do!</p>
   </div>
-  <div class="aspectContainer">
-    <div class="square">
-      <div class="aspectInner">
-        <div class="projectImages-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-              <!-- Slides -->
-              {%- for images in collections.projects %} 
-                  <div class="swiper-slide" >
-                      <div style="background-image:url('{{images.data.image}}')"></div>
-                      <p>{{ images.data.summary }}</p>
-                  </div>
-              {%- endfor %}
+  <div class="projectImages-container">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {%- for images in collections.projects %} 
+          <div class="swiper-slide" >
+              <div id="projectImage" style="background-image:url('{{images.data.image}}')"></div>
+              <p>{{ images.data.summary }}</p>
           </div>
-              
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev">
-            &lt
-          </div>
+      {%- endfor %}
+    </div>
+    <div id="navigationContainer">
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">
+        &lt
+      </div>
 
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-          <div class="swiper-button-next">
-            &gt
-          </div>
-        </div>
+      <div class="swiper-button-next">
+        &gt
       </div>
     </div>
-    <div class="slideHide"></div>
+    <div class="slideHide mobileHidden"></div>
   </div>
+<div>
 
-  <script>
+
+
+
+<script>
       var projectImageRoll = new Swiper('.projectImages-container', {
           // Optional parameters
           direction: 'horizontal',
           loop: true,
-          spaceBetween: 250,
+          spaceBetween: -30,
           autoplay: {
           delay: 6400,
           },
@@ -156,7 +156,7 @@ eleventyNavigation:
 
       });
   </script>
-</div>
+
 
 {# Font Styling Section
 <div>
