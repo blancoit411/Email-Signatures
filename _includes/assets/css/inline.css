@@ -857,65 +857,89 @@ div#serviceSummarySection{
 	margin-bottom: 100px;
 }
 
-#featProjectSection{
-	display: grid;
-    grid-template-columns: 1fr 500px;
-	overflow: hidden;
-}
 
-#featProjectSection p{
-	max-width: 300px;
-}
-#featProjectSection > div:first-of-type *{
-	position: relative;
-	z-index: 20;
-}
-
-div#featProjectSection .aspectContainer{
+div#featProjectSection{
 	position: relative;
 }
 
-div#featProjectSection .slideHide{
+div#featProjectSection > #projectsIntro{
 	position: absolute;
-    background: red;
-    width: 50vw;
+	left: 0;
+	top: 0;
+	max-width: 33%;
+	z-index: 101;
+}
+
+div.projectImages-container {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 25px;
+	width: calc(100vw - 50px);
+    max-width: 950px;
+}
+
+div.projectImages-container .swiper-slide{
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	align-items: flex-end;
+
+}
+
+div.projectImages-container #projectImage {
+	width: 50%;
+	padding-top: 50%;
+	background-size: cover;
+	background-position: center;
+}
+
+div.projectImages-container p{
+	text-align: right;
+	max-width: 150px;
+	vertical-align: text-bottom;
+	margin-right: 15px;
+}
+
+div.projectImages-container div#navigationContainer {
+	width: 14%;
+    position: absolute;
+    bottom: 0;
+    height: 42px;
+	z-index: 101;
+}
+
+div.projectImages-container .swiper-button-prev, div.projectImages-container .swiper-button-next, div.projectImages-container .swiper-pagination {
+	position: absolute;
+    color: initial;
+	align-items: initial;
+	font-size: 1.2rem;
+	font-weight: 600;
+	z-index: 1000;
+}
+
+div.projectImages-container .swiper-button-prev{
+	left: 0;
+}
+
+
+div.projectImages-container div.swiper-pagination {
+	z-index: 10;
+}
+
+div.projectImages-container .swiper-button-next{
+	right: 0;
+}
+div.projectImages-container .slideHide {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(0,0,0,0) 100%);
+	position: absolute;
+    width: 30%;
     height: 110%;
     top: -5%;
-    z-index: 5;
-}
-
-div#featProjectSection .slideHide{
-	left: calc(-50vw);
-}
-
-div#featProjectSection div.projectImages-container{
-	overflow: visible;
-}
-
-div.projectImages-container > div > div > div{
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-}
-
-
-.projectImages-container .swiper-button-prev, .projectImages-container .swiper-button-next{
-	/* position: initial;
-	display: inline-block; */
-	color: initial;
-	/* width: initial;
-	height: initial;
-	margin: 0 5px;
-	top: unset;
-	bottom: 0; */
-}
-.projectImages-container .swiper-pagination{
-	/* position: initial;
-	display: inline-block;
-	width: initial; */
-	font-family: 'Friz Quadrata';
-	transform: translate(0, -25px);
+    left: 0;
+    z-index: 100;
 }
 
 @media screen and (max-width: 769px) {
@@ -1087,11 +1111,46 @@ div.projectImages-container > div > div > div{
 	}
 
 	div#featProjectSection{
-		grid-template-columns: 1fr;
+		width: 100vw;
+		overflow: hidden;
+	}
+
+	div#featProjectSection>#projectsIntro{
+		position: initial;
+		max-width: initial;
+	}
+	div.projectImages-container{
+		width: 100%;
+		margin: 10px auto;
+		overflow: visible;
+	}
+
+	div.projectImages-container .swiper-slide{
+	flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+	/* margin: 15px; */
+	background: white;
+	filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.1));
+	transform: scale(0.9);
 	}
 	
-	div#featProjectSection .aspectContainer{
-		margin-top: 30px;
+
+	div.projectImages-container #projectImage {
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	div.projectImages-container p {
+		max-width: initial;
+		margin: 15px;
+		text-align: left;
+	}
+
+	div.projectImages-container div#navigationContainer {
+	width: 32%;
+    position: relative;
+	margin: 0 auto;
 	}
 
 	/* SERVICES */
