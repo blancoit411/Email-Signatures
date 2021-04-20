@@ -1,4 +1,4 @@
 ---
-image: /static/uploads/projects/pankaj-patel-sxihya4oejs-unsplash.jpg
-summary: No really, change this in the CMS
+image: /static/uploads/projects/thumbnail_20200430_164647-1-.jpg
+summary: Railroad Bore
 ---
