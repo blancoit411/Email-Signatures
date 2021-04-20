@@ -1,4 +1,4 @@
 ---
-image: /static/uploads/projects/yancy-min-842ofhc6mai-unsplash.jpg
-summary: Uploaded only for testing purposes
+image: /static/uploads/projects/resized_20191015_110134.jpeg
+summary: Sewer install in Rock
 ---
