@@ -748,7 +748,7 @@ div#historySection.fiftySplit > div:first-of-type{
 
 div#historySection.fiftySplit > div:last-of-type{
 	background: var(--lightGrey);
-	padding: 50px 0;
+	padding: 75px 0;
 }
 
 div#historySection.fiftySplit>div:last-of-type>*{
