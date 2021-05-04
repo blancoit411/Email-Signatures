@@ -1048,6 +1048,7 @@ div.projectImages-container .slideHide {
 
 	div#officeHrsContainer{
 		text-align: left;
+		transform: translateX(35px);
 	}
 	
 	div#officeHrsContainer > p:first-of-type {
