@@ -1067,9 +1067,14 @@ div.projectImages-container .slideHide {
 
 	/* HERO + SIDEKICK */
 
-	#hero, #hero > div.swiper-container-initialized{
+	#hero{
 		height: 500px;
 	}
+
+	#hero > div.heroImageRoll-container{
+		height: 500px;
+	}
+
 
 	#sidekick{
 		height: 250px;
