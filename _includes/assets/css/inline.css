@@ -460,8 +460,9 @@ footer a[href] {
 }
 
 footer #bcOverview {
-	max-width: 550px;
+	max-width: 650px;
 	padding-right: 75px;
+	font-size: 0.8rem;
 }
 
 footer #bcContact > svg:first-of-type{
@@ -674,6 +675,7 @@ div.aspectInner{
 	left: 0;
 	bottom: 0;
 	right: 0;
+	overflow: hidden;
 }
 
 
@@ -771,7 +773,7 @@ div#historySection.fiftySplit>div:last-of-type>*{
 div#careerSection table{
 	margin: 75px 25px;
 	width: calc(100% - 50px);
-	font-size: 1.4rem;
+	font-size: 0.8rem;
 	text-align: left;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -780,6 +782,7 @@ div#careerSection table{
 }
 
 div#careerSection td,th{
+	font-size: 1rem;
 	padding: 15px 25px;
 	border-bottom: 1pt solid var(--lightGrey);
 
@@ -793,13 +796,6 @@ padding: 0 25px;
 div#careerSection td.jobDescription
 {
 	font-size: 0.9rem;
-}
-
-div#careerSection td:not(.jobDescription){
-	cursor: pointer;
-}
-div#careerSection td.jobDescription.hidden{
-	display:none;
 }
 
 

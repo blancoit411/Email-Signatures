@@ -52,21 +52,25 @@ eleventyNavigation:
   <p class="standout">    
     Without them we are just an idea. The hardworking men and women who make up "Team Blackrock" are truly our greatest assets. They are simply the best. Their years of knowledge and dedication are the backbone of our success.
   </p>
-<div class="aspectContainer">
-  <div class="square">
-    <div class="aspectInner">
-      <div class="teamImages-container">
-      <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            {%- for images in collections.teamImages %} 
-                <div class="swiper-slide" style="background-image: url('{{images.data.image}}')"></div>
-            {%- endfor %}
-        </div>
+
+  {% if collections.teamImages %}
+    <div class="aspectContainer">
+      <div class="square">
+        <div class="aspectInner">
+          <div class="teamImages-container">
+          <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" style="height:600px">
+                <!-- Slides -->
+                {%- for images in collections.teamImages %} 
+                    <div class="swiper-slide" style="background-image: url('{{images.data.image}}')"></div>
+                {%- endfor %}
+            </div>
+          </div>
+        </div>  
       </div>
-    </div>  
-  </div>
-</div>
+    </div>
+  {% endif %}
+
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>

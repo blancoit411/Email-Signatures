@@ -11,29 +11,41 @@ eleventyNavigation:
 <div id="careerSection">
   <h1 class="center">Find your future</h1>
   <p class="standout center">All of our employees are committed to a strong work ethic, ensuring that the needs of our customers are met in a timely manner. Our employees are cross-trained to ensure the best machine performance, quality customer service and maximum production.</p>
-  <p class="standout center"><a href="/contact">Contact us to apply →</a></p>
+  <p class="standout center" style="margin-top: 1rem"><a href="/contact">Contact us to apply →</a></p>
   
   <!-- Table containing DIV for layout purposes -->
   <!-- might be able to remove -->
-    <table>
-      <tr>
-        <th>Job Title</th>
-        <th>Location</th>
-        <th>Type</th>
-      </tr>  
 
-      <!-- nunjuks javascript function that creates table rows for data from job collections -->
-
-      {%- for jobs in collections.jobs %}
-      <tr onclick=jobToggleDescription({{loop.index0}})>
-        <td>{{ jobs.data.name }}</td>
-        <td>{{ jobs.data.location }}</td>
-        <td>{{ jobs.data.type }}</td>
-      </tr>
-      <tr>
-        <td colspan=3 class="jobDescription hidden" id="{{ loop.index0 }}">{{ jobs.data.description }}</td>
-      </tr>
-      {%- endfor %}
+    <table class="job-table">
+      <thead>
+        <tr>
+          <th class="table-header">Available Positions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for jobs in collections.jobs %}
+        <tr class="table-row">
+          <td class="table-cell">
+                        <div class="job-field">
+              <span class="job-value">{{ jobs.data.name }}</span>
+            </div>
+              <div class="job-field" style="font-size: 0.9rem">
+              <span class="job-label">Location:</span>
+              <span class="job-value">{{ jobs.data.location }}</span>
+            </div>
+              <div class="job-field" style="font-size: 0.9rem">
+              <span class="job-value">Type: {{ jobs.data.type }}</span>
+            </div>
+            {% if jobs.data.description %}
+            <div class="job-field" style="font-size: 0.9rem">
+              <span class="job-value job-description">Description: {{ jobs.data.description }}</span>
+            </div>
+            {% endif %}
+          </td>
+        </tr>
+        {%- endfor %}
+      </tbody>
     </table>
+
     <p class="center">Se habla Espaňol</p>
 </div>
