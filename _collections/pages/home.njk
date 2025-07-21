@@ -7,175 +7,117 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-{% include "components/hero.njk" %}
-<div id="callToAction">
-  {% include "static/branding/logoWBG.svg" %}
-  <p class="standout center">Blackrock is a professional construction company with over 80 years of combined experience. All of our resources are focused on completing your project with the highest standards in mind.
-  <br><a href="/contact">Contact us now →</a>
-  </p>
-</div>
+{%- for users in collections.users %} 
+<table width="420" style="width:420px;font-family: 'Montserrat', Helvetica, Arial, sans-serif;line-height:normal" cellspacing="0" cellpadding="0" border="0">
+    <style type='text/css'>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+<tbody>
+<tr>
+  <td width="420">
+      <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+              <td width="130" style="line-height: 0px;padding-right: 15px;border-right: 1px solid #1f3873;">
+                  <img src="https://iili.io/FWoLBov.png" alt="Aulsbrook-logo" width="130" style="width:130px;display:inline; overflow:hidden; border:none;vertical-align:middle">
+              </td>
+              <td width="205" style="padding-left: 15px;">
+                  <table width="205" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                          <tr>
+                              <td colspan="20" valign="middle" width="205" style="border-bottom: 1px solid #1f3873;line-height: 14px; font-family: 'Montserrat', sans-serif;padding-bottom: 5px;">
+                                  <span style="font-family: 'Montserrat', Helvetica, Arial, sans-serif;color:#001F66;font-size: 16px;line-height: 16px;font-weight: bold;">
+                                      {{ users.data.name }}
+                                  </span><br>
+                                  <span style="font-family: 'Montserrat', Helvetica, Arial, sans-serif;color:#CD2726;font-size: 11px;line-height: 14px;font-weight: 500;">
+                                      {{ users.data.title }}
+                                  </span>
+                                  {% if users.data.title2 %}
+                                  <br><span style="font-family: 'Montserrat', Helvetica, Arial, sans-serif;color:#CD2726;font-size: 11px;line-height: 14px;font-weight: 500;">{{ users.data.title2 }}
+                                  </span>
+                                  {% endif %}
+                              </td>
+                          </tr>
+                          <tr>
+                              <td width="205" style="vertical-align:middle;padding-top: 7px;" valign="middle">
+                                  <table width="205" border="0" cellspacing="0" cellpadding="0" style="padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                      <tr height="21" style="vertical-align: middle;">
+                                          <td width="21" style="vertical-align: middle;">
+                                              <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW" style="vertical-align: -webkit-baseline-middle;  font-family: 'Montserrat', sans-serif;">
+                                                <tbody>
+                                                    <tr>
+                                                      <td style="vertical-align: bottom;"><span color="#3a975b" width="12" class="sc-jlyJG bbyJzT" style="display: block;"><img src="https://iili.io/3LGSyzb.png" color="#3a975b" width="12" height="12" class="sc-iRbamj blSEcj" style="display: block;"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                              </table>
+                                          </td>
+                                            <td style="padding: 0px;line-height:14px;"><a href="tel:817-775-5364" color="#4d4747" class="sc-gipzik iyhjGb" style="text-decoration: none; color: #ffffff;line-height:14px; font-size: 12px;font-family: 'Montserrat', sans-serif;"><span style="text-decoration: none;line-height:14px; font-family: 'Montserrat', sans-serif;color: #1f3873; font-size: 11px;font-weight: 500;">817-775-5364</span></a></td>
+                                      </tr>
+                                      <tr height="21" style="vertical-align: middle;">
+                                          <td width="21" style="vertical-align: middle;">
+                                              <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW" style="vertical-align: -webkit-baseline-middle;  font-family: 'Montserrat', sans-serif;">
+                                                <tbody>
+                                                    <tr>
+                                                      <td style="vertical-align: bottom;"><span color="#3a975b" width="12" class="sc-jlyJG bbyJzT" style="display: block;"><img src="https://iili.io/3LGSD79.png" color="#3a975b" width="12" height="12" class="sc-iRbamj blSEcj" style="display: block;"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                              </table>
+                                          </td>
+                                          <td style="padding: 0px;line-height:14px;"><a href="mailto:{{ users.data.email }}" color="#4d4747" class="sc-gipzik iyhjGb" style="text-decoration: none; color: #ffffff;line-height:14px; font-size: 12px;font-family: 'Montserrat', sans-serif;"><span style="text-decoration: none;line-height:14px; font-family: 'Montserrat', sans-serif;color: #1f3873; font-size: 11px;font-weight: 500;">{{ users.data.email }}</span></a></td>
+                                      </tr>
+                                      <tr height="21" style="vertical-align: middle;">
+                                          <td width="21" style="vertical-align: middle;">
+                                              <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW" style="vertical-align: -webkit-baseline-middle;  font-family: 'Montserrat', sans-serif;">
+                                                <tbody>
+                                                    <tr>
+                                                      <td style="vertical-align: bottom;"><span color="#3a975b" width="12" class="sc-jlyJG bbyJzT" style="display: block;"><img src="https://iili.io/3LGStd7.png" color="#3a975b" width="12" height="12" class="sc-iRbamj blSEcj" style="display: block;"></span></td>
+                                                    </tr>
+                                                </tbody>
+                                              </table>
+                                          </td>
+                                          <td style="padding: 0px;line-height:14px;"><a href="https://thetexaslawdog.com/" color="#525026" class="sc-gipzik iyhjGb" style="text-decoration: none;line-height:14px; color: #ffffff; font-size: 12px;font-family: 'Montserrat', sans-serif;"><span style="text-decoration: none;line-height:14px; font-family: 'Montserrat', sans-serif;color: #1f3873; font-size: 11px;font-weight: 500;">www.thetexaslawdog.com</span></a></td>
+                                      </tr>
+                                  </table>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </td>
+      </table>
+  </td>
+     <tr>
+                <td width="420" style="padding-top: 10px;">
+                    <table cellpadding="0" cellspacing="0">
+                       <tr>
+                          <td align="center" width="420" style="background-color: #393939;padding-top: 6px;padding-bottom: 7px;">
+                              <table cellpadding="0" cellspacing="0">
+                                <tr height="21" style="vertical-align: middle;">
+                                    <td width="19" style="vertical-align: middle;">
+                                       <table cellpadding="0" cellspacing="0" class="sc-gPEVay eQYmiW" style="vertical-align: -webkit-baseline-middle;  font-family: 'Montserrat', sans-serif;">
+                                          <tbody>
+                                             <tr>
+                                                <td style="vertical-align: bottom;"><span color="#420026" width="12" class="sc-jlyJG bbyJzT" style="display: block;"><img src="https://iili.io/2Pqqvvj.png" alt="Location: "color="#3a975b" width="12" height="12" class="sc-iRbamj blSEcj" style="display: block;"></span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                    <td style="padding: 0px;line-height:14px;letter-spacing: 0.3px;"><span style="text-decoration: none;line-height:14px; font-family: 'Montserrat', sans-serif;color: #ffffff; font-size: 12px;font-weight: 500;letter-spacing: 0.3px;">424 E. Lamar Blvd. Suite 200 Arlington Texas 76011</span></td>
+                                </tr>
+                              </table>
+                          </td>
+                       </tr>
+                    </table>
+                </td>
+            </tr>
+</tr>
+    {% if users.data.mda %}
+    <tr>
+      <td width="420" align="center" style="line-height:0px;padding-top:10px;">
+          <img src="https://iili.io/FWoL3HF.png" alt="milliondollars-logo" width="300" style="width:300px;display:inline; overflow:hidden; border:none;vertical-align:middle">
+      </td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>                                  
+{%- endfor %}
 
-<div id="serviceSummarySection">
-  <h1 class="fade">Our Services</h1>
-  <div class="servicesContainer">
-    {% set j = 0 %}
-    {%- for i in range(0,collections.services | length) %}
-      {% if collections.services[i].data.homepageVisible and j < 3 %}
-        {% set services = collections.services[i] %}
-        {% set j = j + 1 %}
-        <div>
-          <img src="{{ services.data.icon }}" alt="{{ services.data.name }} icon">
-          <p><strong>{{ services.data.name }}</strong></p>
-          <p>{{ services.data.summary }}</p>
-        </div>
-      {% endif %}
-    {%- endfor %}
-      
-    
-  </div>
-  <a href="/services/">See all that we have to offer →</a>
-</div>
-
-{# <div id="testimonialSection">
-  <div>
-    <span class="fade">“</span>
-    <!-- Slider main container -->
-    <div class="testimonial-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            {%- for text in collections.testimonials %} 
-                <div class="swiper-slide">
-                  <p class="standout">{{text.data.testimonial}}</p>
-                  <p>{{text.data.name}}</p>
-                  <p>{{text.data.title}}</p>
-                </div>
-            {%- endfor %}
-        </div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev">
-          &lt
-        </div>
-
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-next">
-          &gt
-          </div>
-
-    </div>
-
-    <script>
-    var testimonialSwiper = new Swiper('.testimonial-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        autoplay: {
-          delay: 6400,
-        },
-        
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
-    
-    {# come back to this! <svg></svg>
-    <a href="/projects/">Read more about our projects →</a>
-  </div>
-</div> #}
-
-
-
-<div id="featProjectSection">
-  <div id="projectsIntro">
-    <h1>Featured<br>Projects</h1>
-    <p>These are projects we loved working on in the past that we think are fantastic examples of the kind of things we do!</p>
-  </div>
-  <div class="projectImages-container">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      {%- for images in collections.projects %} 
-          <div class="swiper-slide" >
-              <div id="projectImage" style="background-image:url('{{images.data.image}}')"></div>
-              <p>{{ images.data.summary }}</p>
-          </div>
-      {%- endfor %}
-    </div>
-    <div id="navigationContainer">
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev">
-        &lt
-      </div>
-
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <div class="swiper-button-next">
-        &gt
-      </div>
-    </div>
-    <div class="slideHide mobileHidden"></div>
-  </div>
-<div>
-
-
-
-
-<script>
-      var projectImageRoll = new Swiper('.projectImages-container', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: true,
-          spaceBetween: -30,
-          autoplay: {
-          delay: 6400,
-          },
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-          },
-
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-
-      });
-  </script>
-
-
-{# Font Styling Section
-<div>
-  <h1>Header 1</h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, inventore quaerat. Mollitia, molestiae dolorem laboriosam ex illum rem repellat labore nobis magnam qui earum dicta reprehenderit ducimus asperiores at aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magni quasi iste ipsa commodi, explicabo vero officiis totam esse dignissimos beatae voluptate quisquam harum tempore quas temporibus nobis provident earum?Enim assumenda, obcaecati quas provident temporibus, ipsum ipsa error modi nemo id quos maxime dolor cumque dolorem quibusdam, nostrum corporis. Voluptatum nihil quam ullam expedita fuga eos quia libero iusto.</p>
-  <h2>Header 2</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat tenetur, ea reprehenderit consectetur, alias enim laborum dolore cupiditate impedit ex asperiores, vero excepturi repellat debitis modi ipsa minus? Dolores.
-  Adipisci sint facilis sequi dolorem quos. Esse molestias eius quos reprehenderit cupiditate debitis rerum enim quisquam nostrum alias! Dolorum necessitatibus repudiandae voluptatibus doloremque commodi sequi quos doloribus dolores aliquid sunt.
-  A, officiis accusamus doloremque iure fugiat suscipit, quis consectetur corporis error voluptates reprehenderit, esse libero dolorum at dicta illum. Dignissimos earum recusandae beatae odit ex repellendus iste maxime ducimus iusto!</p>
-  <h3>Header 3</h3>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusantium asperiores aspernatur! Quis porro quam corrupti quo esse eligendi odio placeat aliquid dignissimos, vel eos sint quibusdam, quae, ut quisquam!
-  Consequatur hic magni sit ad ipsum quibusdam, aspernatur totam quidem dolores suscipit dignissimos adipisci voluptatum error eius harum cumque qui amet nemo architecto minima aliquam id explicabo voluptates! Dolores, enim.
-  At vel optio modi blanditiis fugiat rem laborum consectetur natus iusto quaerat nemo, facere consequatur maxime provident nobis molestias minima ex! Eligendi tempora corrupti esse. Quae nesciunt maxime dolore quidem.</p>
-  <h4>Header 4</h4>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis repellat sint ipsum, aspernatur quasi cumque quis ipsam earum numquam et, architecto odio doloremque quia voluptas. Nobis at iure modi.
-  Nulla aut quis corporis vel ab rem eos laudantium alias dicta porro, excepturi reprehenderit magnam reiciendis iste illum dolorem maxime. Ipsam sunt totam sint, illo esse facere delectus dolore at.
-  Officiis dicta magnam nobis quibusdam natus aliquam fugit corrupti possimus ex quos est earum doloribus, nesciunt id exercitationem, nihil cupiditate dolor in molestias tempore eveniet ullam fugiat. Quisquam, non facere!</p>
-  <h5>Header 5</h5>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, fuga deleniti totam explicabo laboriosam facilis quas dignissimos unde velit mollitia, sit iste omnis officiis quaerat sint earum laborum error corrupti.
-  Voluptatibus perspiciatis in, similique impedit corporis quia autem ullam repellendus sint eveniet, et blanditiis aspernatur harum cum! Excepturi minus, cumque ea, necessitatibus qui suscipit iusto asperiores quam adipisci temporibus eveniet.
-  Nesciunt quasi provident veniam ut ab ex unde officiis ducimus aspernatur sequi ad veritatis, impedit mollitia rem reiciendis sint, suscipit similique nisi dolore inventore deleniti omnis officia. Totam, quam pariatur!</p>
-</div> #}

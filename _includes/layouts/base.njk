@@ -1,17 +1,13 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 
-	{% include "components/head.njk" %}
+	<body>
 
-	<body onload="highlightDate()">
-		
-		{% include "components/nav.njk" %}
 
 		<main>
 			{{ layoutContent | safe }}
 		</main>
 
-		{% include "components/footer.njk" %}
 	</body>
 
 </html>
